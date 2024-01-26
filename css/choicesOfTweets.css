@@ -1,0 +1,27 @@
+#choices {
+    display: flex;
+    border-bottom: solid 0.01px #3c3c3c3b;
+    margin-top: 1vh;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    top: 0vh;
+}
+
+span#forYou {
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: solid 0.2em rgb(0,172,237);
+}
+
+.options {
+    flex: 1;
+    margin: 2vh 15vw 1vh;
+    font-weight: 100;
+}
+
+span#following {
+    color: gray;
+    text-align: center;
+}

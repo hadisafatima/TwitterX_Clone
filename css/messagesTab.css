@@ -1,0 +1,85 @@
+#searchBarForMsgTab{
+    display: none;
+}
+
+div#msgReqs {
+    display: none;
+    flex-direction: row;
+}
+
+p#msgReqIcon {
+    width: 14%;
+    border: solid 0.1em #8080806b;
+    border-radius: 50%;
+    height: 7.5vh;
+    margin: 2.3em 0.2em 0em 0.5em;
+}
+
+#msgReqIcon i {
+    font-size: 1.7em;
+    margin-top: 0.47em;
+    margin-left: 0.53em;
+}
+
+div#reqs {
+    margin-left: 0.5em;
+}
+
+#reqs h1 {
+    font-size: large;
+    margin-top: 2.5em;
+}
+
+#reqs p {
+    margin-top: -0.8em;
+    font-size: 0.9em;
+}
+
+#messages{
+    display: none;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+}
+
+.message img {
+    width: 14%;
+    height: 7.5vh;
+    margin-left: 0.5em;
+    border-radius: 50%;
+    margin-top: 0.3em;
+}
+
+p.msgContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -0.4em;
+    left: 0.5em;
+}
+
+span.msg, #reqs p {
+    color: gray;
+}
+
+span.newMsgDot {
+    background-color: rgb(0,172,237);
+    display: inline-block;
+    height: 1vh;
+    border-radius: 50%;
+    position: relative;
+    top: 0.5vh;
+    left: 3vw;
+    width: 1.5vw;
+    color: white;
+}
+
+i#envelopeForMsgsTab {
+    position: relative;
+    left: -0.5em;
+    transform: rotate(180deg);
+    transition: transform 0.5s ease 2s;
+    display: none;
+}

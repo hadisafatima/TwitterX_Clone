@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/choicesOfTweets.css">
+    <link rel="stylesheet" href="css/mainBody.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/newTweet.css">
+    <link rel="stylesheet" href="css/notificationsTab.css">
+    <link rel="stylesheet" href="css/searchTab.css">
+    <link rel="stylesheet" href="css/communitiesTab.css">
+    <link rel="stylesheet" href="css/messagesTab.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
+
+    <!-- underneath is a link to connect the font awesome icons' to the page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Twitter-X Clone By Hadisa Fatima Syed</title>
+</head>
+<body>
+
+                                     <!-- H E A D E R  -->
+    
+<header>
+    <div id="header">
+        <div class="flex-items" id="profilePic" onclick="navBar()"><img src="https://i.pinimg.com/236x/22/c6/4d/22c64d99a15c53f031dce89da274901a.jpg" alt="profilePic"></div>
+        <div class="flex-items">
+            <img id="whiteThemeLogo" src="Twitter logo white theme.png" alt="">
+            <img id="blackThemeLogo" src="Twitter Logo black theme.png" alt="">
+        </div>
+        <div class="flex-items" id="setting-icon"><i class="fa fa-cog settingicon" aria-hidden="true"></i></div>
+    </div>
+</header>
+
+            
+                             <!-- H O M E P A G E   T A B  -->
+            
+<div id="homepage">
+    <div id="choices">
+        <span class="options" id="forYou" onclick="choicesButton(this.id)">For You</span>
+        <span class="options" id="following" onclick="choicesButton(this.id)">Following</span>
+    </div>
+
+    <div id="newTWeetOPtionForBigScreen">
+        <!-- <h1>new tweet</h1> -->
+        <img id="ppArea" src="https://i.pinimg.com/236x/22/c6/4d/22c64d99a15c53f031dce89da274901a.jpg" alt="">
+        <div id="newTweetcontentArea">
+            <h1>What is happening?!</h1>
+            <div id="newTweetOPtionsArea">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <i class="fa fa-list-ul" aria-hidden="true"></i>
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div id="postBtn">Post</div>
+        </div>
+
+    </div>
+    
+    <div id="tweets">
+
+        <div id="forYouTweets">
+
+        <!-- first tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1703449511510-4e1665d4768e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Uzair Khawar</span>
+                    <span class="username">@ukhawar0</span>
+                    <span class="time">8m</span>
+                </p>
+                <p class="retweetcomment">Lorem ipsum dolor sit.</p>
+                <p class="retweet">
+                    <span class="retweetpp"><img src="https://images.unsplash.com/photo-1561131989-b8112bafbd43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVtZXN8ZW58MHx8MHx8fDA%3D" alt=""></span>
+                    <span class="tweeterinfo">
+                        <span class="displayname">User</span>
+                        <span class="username">@username</span>
+                        <span class="time">4m</span>
+                    </span>
+                    <span class="retweeted"><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Suscipit illo, nostrum quibusdam nobis animi consectetur similique.
+                    </span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">78</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- second tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://i.pinimg.com/236x/22/c6/4d/22c64d99a15c53f031dce89da274901a.jpg" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Fakhar Zaman replied me</span>
+                    <!-- <span class="username">@iAmBeastyy</span> -->
+                    <span class="time">10m</span>
+                </p>
+                <p id="reply">replying to <span id="replyingto">@IKTigers2</span></p>
+                <p id="repliedtweet">Lorem ipsum dolor sit amet.</p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- third tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Ibrahim_66</span>
+                    <span class="username">@cric_insane<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error id 
+                    repudiandae nihil consequatur temporibus in officiis. Aliquam voluptatum excepturi, 
+                    commodi in dignissimos porro officia labore. Praesentium placeat, culpa dolorem maxime 
+                    commodi ipsam dolor saepe eligendi numquam💕.<br><span class="hashtag">#WIvENG</span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- fourth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">2d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolorem animi!
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true">1</i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true">3</i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true">22</i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">45</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- fifth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TIGEr-Imranism<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="username">@IKTigers2</span>
+                    <span class="time">2d</span>
+                </p>
+                <p class="retweetcomment">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <p class="retweet">
+                    <span class="retweetpp"><img src="https://media.istockphoto.com/id/1186525906/photo/sunburned-boy.webp?b=1&s=170667a&w=0&k=20&c=vzCnMxj_7gi-IgLL7B1x5HZxkS0O-5kqDyR-68naeaw=" alt=""></span>
+                    <span class="tweeterinfo">
+                        <span class="displayname">XYZ</span>
+                        <span class="username">@hehe</span>
+                        <span class="time">4s</span>
+                    </span>
+                    <span class="retweeted"><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque perferendis quis 
+                        velit, esse eius asperiores repellat ad.
+                    </span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">78</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- sixth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://plus.unsplash.com/premium_photo-1667752591582-bf14e70f7319?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TWeetIt</span>
+                    <span class="username">@Tweeter_here</span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet"> 
+                    Lorem ipsum dolor sit amet💫.
+                    <p class="images">
+                        <img class="grid-items pic1" src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        <img class="grid-items pic2" src="https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        <img class="grid-items pic3" src="https://images.unsplash.com/photo-1618477371303-b2a56f422d9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZyb250JTIwZW5kJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" alt="">
+                        <img class="grid-items pic4" src="https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZyb250JTIwZW5kJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" alt="">
+                    </p>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>42</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>126</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>9</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">782</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- seventh tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1565551223391-be988013ee6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Usama Zafar</span>
+                    <span class="username">@usama7</span>
+                    <span class="time">9m</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia perspiciatis laborum 
+                    animi vitae💔.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>2</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>17</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">43</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- eight tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">8m</span>
+                </p>
+                <p class="retweetcomment">Lorem ipsum dolor sit.</p>
+                <p class="retweet">
+                    <span class="retweetpp"><img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+                    <span class="tweeterinfo">
+                        <span class="displayname">Fakahar Za...</span>
+                        <span class="username">@iAmBeastyy<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                        <span class="time">4d</span>
+                    </span>
+                    <span class="retweeted"><br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit enim placeat 
+                        doloribus quaerat eum quasi, cumque quam, ut pariatur, quis quisquam expedita 
+                        repellat. Magni sequi commodi nesciunt earum cum ex amet molestiae! 🖤
+                    </span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">78</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- ninth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://plus.unsplash.com/premium_photo-1664392309182-017207df3537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">seebo</span>
+                    <span class="username">@iAmHere<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet🤎🤎.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>1</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- tenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Ibrahim_66</span>
+                    <span class="username">@cric_insane<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">10m</span>
+                </p>
+                <p id="reply">replying to <span id="replyingto">@H_sy_ed</span></p>
+                <p id="repliedtweet">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, 
+                    ad dolorum, adipisci dolore consectetur magni reiciendis quisquam laboriosam iste iure 
+                    voluptates fugiat! Inventore.</p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">72</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- eleventh tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Fakahar Zaman...</span>
+                    <span class="username">@iAmBeastyy<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet 💥.<br><span class="hashtag">#WIvENG</span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- tweleveth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TIGEr-Imranism</span>
+                    <span class="username">@IKTigers2<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet oneImage">
+                    Lorem, ipsum dolor 💔
+                    <img src="https://images.unsplash.com/photo-1598983870677-01e066a0b901?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>10</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>6</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- thirteenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1600181957663-d8b921a1f516?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">webDev..per</span>
+                    <span class="username">@Hadzzz</span>
+                    <span class="time">1s</span>
+                </p>
+                <p id="reply">replying to <span id="replyingto">@IKTigers2</span></p>
+                <p id="repliedtweet" class="oneImage">
+                    Lorem ipsum dolor sit amet consectetur 👀
+                    <img src="https://images.unsplash.com/photo-1521249664898-864e6c1b6d5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">72</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- fourteenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1565551223391-be988013ee6d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">usama Zafar</span>
+                    <span class="username">@usama7</span>
+                    <span class="time">2d</span>
+                </p>
+                <p class="retweetcomment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Magni, illo. ✨🙌🌼</p>
+                <p class="retweet">
+                    <span class="retweetpp"><img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+                    <span class="tweeterinfo">
+                        <span class="displayname">Fakhar Za...</span>
+                        <span class="username">@iAmBeastyy<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                        <span class="time">4d</span>
+                    </span>
+                    <span class="retweeted"><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, quisquam sit beatae 
+                        similique distinctio possimus ratione laudantium explicabo natus iure labore culpa 
+                        minima dolorem. 
+                        <span id="retweetedImages">
+                            <img class="pic1" src="https://images.unsplash.com/photo-1622675103136-e4b90c9a33d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlciUyMGFlc3RoZXRpY3N8ZW58MHx8MHx8fDA%3D" alt="">
+                            <img class="pic2" src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyJTIwYWVzdGhldGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                            <img class="pic3" src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyJTIwYWVzdGhldGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                            <img class="pic4" src="https://images.unsplash.com/photo-1622675103136-e4b90c9a33d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlciUyMGFlc3RoZXRpY3N8ZW58MHx8MHx8fDA%3D" alt="">
+                        </span>
+                    </span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>34</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>72</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">1k</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- fifteenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1703449511510-4e1665d4768e?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Uzair Khawar</span>
+                    <span class="username">@ukhawar0</span>
+                    <span class="time">8s</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit 😂😂. <br>
+                    Quaerat est temporibus ducimus quos repudiandae aliquid consequuntur, 
+                    voluptates, labore iusto accusamus odit mollitia 🎇😏. <br>
+                    Ad doloribus veniam aspernatur error excepturi! Architecto deserunt sunt fugiat 😑🙄.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>10</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>6</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- sixteenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1687725770965-9637914b89de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2VycyUyMGFlc3RoZXRpY3N8ZW58MHx8MHx8fDA%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Abdul Rehman Memon</span>
+                    <span class="username">@stfu_okay</span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem, ipsum 🥶
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>1</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- seventeenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="logo.png" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Abdul...</span>
+                    <span class="username">@stfu_okay</span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam tenetur animi quis a 
+                    sunt assumenda. Aut aperiam voluptatem ad eius. Dolorum incidunt tenetur accusamus fuga 
+                    ipsam assumenda, maiores soluta quibusdam labore consequatur? Pariatur sunt aliquam 
+                    temporibus dicta eligendi, autem at saepe velit ipsam.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>21</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- eighteenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </p>
+                <p id="reply">replying to <span id="replyingto">@iAmBeastyy</span></p>
+                <p id="repliedtweet">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, et 🍂👽.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">25</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- nineteenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://plus.unsplash.com/premium_photo-1664392309182-017207df3537?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">seebo</span>
+                    <span class="username">@iAmHere<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem, ipsum 🪐🚗.
+                    <p id="twoImages">
+                        <img id="image1" src="https://images.unsplash.com/photo-1578148190071-173c57e882bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnMlMjBhZXN0aGV0aWNzfGVufDB8fDB8fHww" alt="">
+                        <img id="image2" src="https://images.unsplash.com/photo-1616150707884-ba78dab8ca15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FycyUyMGFlc3RoZXRpY3N8ZW58MHx8MHx8fDA%3D" alt="">
+                    </p>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>2</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>16</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">69</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- twenteeth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1461696114087-397271a7aedc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnMlMjBhZXN0aGV0aWNzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TWeetIt</span>
+                    <span class="username">@Tweeter_here</span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet">
+                    It finally ended!!! 🤧🥺💀
+                    <p id="threeImages">
+                        <img id="firstImage" class="pic1 pic3" src="https://media.istockphoto.com/id/1202097527/photo/female-cricket-batter-hitting-the-ball.webp?b=1&s=170667a&w=0&k=20&c=RV-oiL-hlIsTbcdCdxvuQB32mmMwajSCPA_uubnjaj8=" alt="">
+                        <span id="otherTwo">
+                            <img class="pic2" src="https://media.istockphoto.com/id/1383472028/photo/cricket-ball.webp?b=1&s=170667a&w=0&k=20&c=M62b2aXInTMaBn_cLvCn9SiuBwB-c_KorrTAYxnrw9Q=" alt="">
+                            <img class="pic4" id="bottom" src="https://images.unsplash.com/photo-1607627000458-210e8d2bdb1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JpY2tldCUyMHNwb3J0cyUyMGFlc3RoZXRpY3N8ZW58MHx8MHx8fDA%3D" alt="">
+                        </span>
+                    </p>
+                    <p class="reactions">
+                        <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>28</span>
+                        <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>16</span>
+                        <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>123</span>
+                        <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7.3K</i></span>
+                        <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                    </p>
+                </p>
+            </span>
+        </div>
+
+            <!-- notification end -->
+        <div class="endNotification">
+        <span class="dot"></span>
+        </div>
+
+        </div>
+
+        <div id="followingTweets">
+
+        <!-- first tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1703449511510-4e1665d4768e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Uzair Khawar</span>
+                    <span class="username">@ukhawar0</span>
+                    <span class="time">8m</span>
+                </p>
+                <p class="retweetcomment">Lorem ipsum dolor sit.</p>
+                <p class="retweet">
+                    <span class="retweetpp"><img src="https://images.unsplash.com/photo-1561131989-b8112bafbd43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVtZXN8ZW58MHx8MHx8fDA%3D" alt=""></span>
+                    <span class="tweeterinfo">
+                        <span class="displayname">User</span>
+                        <span class="username">@username</span>
+                        <span class="time">4m</span>
+                    </span>
+                    <span class="retweeted"><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Suscipit illo, nostrum quibusdam nobis animi consectetur similique.
+                    </span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">78</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- second tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1461696114087-397271a7aedc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnMlMjBhZXN0aGV0aWNzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TWeetIt</span>
+                    <span class="username">@Tweeter_here</span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet">
+                    It finally ended!!! 🤧🥺💀
+                    <p id="threeImages">
+                        <img id="firstImage" class="pic1 pic3" src="https://media.istockphoto.com/id/1202097527/photo/female-cricket-batter-hitting-the-ball.webp?b=1&s=170667a&w=0&k=20&c=RV-oiL-hlIsTbcdCdxvuQB32mmMwajSCPA_uubnjaj8=" alt="">
+                        <span id="otherTwo">
+                            <img class="pic2" src="https://media.istockphoto.com/id/1383472028/photo/cricket-ball.webp?b=1&s=170667a&w=0&k=20&c=M62b2aXInTMaBn_cLvCn9SiuBwB-c_KorrTAYxnrw9Q=" alt="">
+                            <img class="pic4" id="bottom" src="https://images.unsplash.com/photo-1607627000458-210e8d2bdb1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JpY2tldCUyMHNwb3J0cyUyMGFlc3RoZXRpY3N8ZW58MHx8MHx8fDA%3D" alt="">
+                        </span>
+                    </p>
+                    <p class="reactions">
+                        <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>28</span>
+                        <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>16</span>
+                        <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>123</span>
+                        <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7.3K</i></span>
+                        <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                    </p>
+                </p>
+            </span>
+        </div>
+
+        <!-- third tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Ibrahim_66</span>
+                    <span class="username">@cric_insane<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error id 
+                    repudiandae nihil consequatur temporibus in officiis. Aliquam voluptatum excepturi, 
+                    commodi in dignissimos porro officia labore. Praesentium placeat, culpa dolorem maxime 
+                    commodi ipsam dolor saepe eligendi numquam💕.<br><span class="hashtag">#WIvENG</span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- fourth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="logo.png" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Abdul...</span>
+                    <span class="username">@stfu_okay</span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam tenetur animi quis a 
+                    sunt assumenda. Aut aperiam voluptatem ad eius. Dolorum incidunt tenetur accusamus fuga 
+                    ipsam assumenda, maiores soluta quibusdam labore consequatur? Pariatur sunt aliquam 
+                    temporibus dicta eligendi, autem at saepe velit ipsam.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>21</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- fifth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TIGEr-Imranism</span>
+                    <span class="username">@IKTigers2<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet oneImage">
+                    Lorem, ipsum dolor 💔
+                    <img src="https://images.unsplash.com/photo-1598983870677-01e066a0b901?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>10</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>6</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- sixth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://plus.unsplash.com/premium_photo-1667752591582-bf14e70f7319?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TWeetIt</span>
+                    <span class="username">@Tweeter_here</span>
+                    <span class="time">1m</span>
+                </p>
+                <p class="ownedtweet"> 
+                    Lorem ipsum dolor sit amet💫.
+                    <p class="images">
+                        <img class="grid-items pic1" src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        <img class="grid-items pic2" src="https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        <img class="grid-items pic3" src="https://images.unsplash.com/photo-1618477371303-b2a56f422d9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZyb250JTIwZW5kJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" alt="">
+                        <img class="grid-items pic4" src="https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZyb250JTIwZW5kJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" alt="">
+                    </p>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>42</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>126</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>9</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">782</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- seventh tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1703449511510-4e1665d4768e?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Uzair Khawar</span>
+                    <span class="username">@ukhawar0</span>
+                    <span class="time">8s</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit 😂😂. <br>
+                    Quaerat est temporibus ducimus quos repudiandae aliquid consequuntur, 
+                    voluptates, labore iusto accusamus odit mollitia 🎇😏. <br>
+                    Ad doloribus veniam aspernatur error excepturi! Architecto deserunt sunt fugiat 😑🙄.
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>10</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>3</span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>6</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">70</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- eighteth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">2d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolorem animi!
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true">1</i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true">3</i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true">22</i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">45</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- ninth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">TIGEr-Imranism<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="username">@IKTigers2</span>
+                    <span class="time">2d</span>
+                </p>
+                <p class="retweetcomment">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <p class="retweet">
+                    <span class="retweetpp"><img src="https://media.istockphoto.com/id/1186525906/photo/sunburned-boy.webp?b=1&s=170667a&w=0&k=20&c=vzCnMxj_7gi-IgLL7B1x5HZxkS0O-5kqDyR-68naeaw=" alt=""></span>
+                    <span class="tweeterinfo">
+                        <span class="displayname">XYZ</span>
+                        <span class="username">@hehe</span>
+                        <span class="time">4s</span>
+                    </span>
+                    <span class="retweeted"><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque perferendis quis 
+                        velit, esse eius asperiores repellat ad.
+                    </span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i>7</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">78</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+        <!-- tenth tweet -->
+        <div class="tweet">
+            <span class="pp"><img src="https://i.pinimg.com/236x/22/c6/4d/22c64d99a15c53f031dce89da274901a.jpg" alt=""></span>
+            <span class="content">
+                <p class="tweeterinfo">
+                    <span class="displayname">Fakahar Zaman...</span>
+                    <span class="username">@iAmBeastyy<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </p>
+                <p class="ownedtweet">
+                    Lorem ipsum dolor sit amet 💥.<br><span class="hashtag">#WIvENG</span>
+                </p>
+                <p class="reactions">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">7</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </p>
+            </span>
+        </div>
+
+            <!-- notification end -->
+        <div class="endNotification">
+            <span class="dot"></span>
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+                <!-- S I D E   N A V   B A R   F O R    B I G G E R   S C R E E N S -->
+
+<div id="navBarForBigScreen">
+    <div id="logoImagesForBigScreen">
+        <img class="logoImg" id="whiteThemeLogo" src="Twitter logo white theme.png" alt="">
+        <img class="logoImg" id="darkthemelogo" src="Twitter Logo black theme.png" alt="">
+    </div>
+    <i class="fa fa-home iconForBigScreen" onclick="homeTabDisplay()" aria-hidden="true"></i><span class="tabName" id="hT">Home</span>
+    <i class="fa fa-search iconForBigScreen" onclick="searchTabDisplay()" aria-hidden="true"></i><span class="tabName" id="sT">Search</span>
+    <i class="fa fa-bell-o iconForBigScreen" onclick="notificationsTabDisplay()" aria-hidden="true"></i><span class="tabName" id="nT">Notifications</span>
+    <i class="fa fa-envelope-o iconForBigScreen" onclick="messageTabDisplay()" aria-hidden="true"></i><span class="tabName" id="msgT">Messages</span>
+    <i class="fa fa-user-o iconForBigScreen" onclick="communitiesTabDisplay()" aria-hidden="true"></i><span class="tabName" id="cT">Communities</span>
+    <i class="fa fa-ellipsis-v iconForBigScreen" id="optsforBigScreen" aria-hidden="true"></i><span class="tabName" id="mT">More</span>
+    
+    
+    <div id="themeOptionsForBigScreen" class="iconForBigScreen">
+        <i class="fa fa-sun-o" id="sunForbigScreens" aria-hidden="true" onclick="blackTheme()"></i>
+        <i class="fa fa-moon-o" id="moonForBigScreens" aria-hidden="true" onclick="whiteTheme()"></i>
+        <span class="tabName" id="tT">Theme</span>
+    </div>
+
+    <div id="bgOfTweetIcon">
+        <i class="fa fa-superpowers" id="tweetIconForBigScreen" aria-hidden="true"></i><span id="postbutton">Post</span>
+    </div>
+
+    <div id="profilePicForBigScreenNav">
+        <img src="https://i.pinimg.com/236x/22/c6/4d/22c64d99a15c53f031dce89da274901a.jpg" alt="profilePic">
+        <div id="user" class="tabName">
+            <p>Hadzzz</p>
+            <span>@iAmBeastyy</span>
+        </div>
+    </div>
+
+</div>
+
+
+                        <!-- P R O F I L E   S I D E   N A V B A R  -->
+    
+<div id="sideNavBar">
+    <div id="navBar">
+        <div id="fixed">
+            
+            <div id="ppNOpts">
+                <img src="https://i.pinimg.com/236x/22/c6/4d/22c64d99a15c53f031dce89da274901a.jpg" alt="">
+                <i class="fa fa-ellipsis-v optForNavBar" aria-hidden="true"></i>
+            </div>
+    
+            <div id="nameNuserName">
+                <span id="name">Fakhar Zaman - The FAUJIIII replied me</span>
+                <span id="uName">@iAmBeastyy</span>
+            </div>
+    
+            <p>326<span>Following</span>408<span>Followers</span></p>
+
+        </div>
+
+        <div id="scrollable">
+            <div id="moreOptions">            
+                <div>
+                    <i class="fa fa-user-o" id="profileNavProfileIcon" aria-hidden="true"></i>
+                    <h1 id="firstHeading">Profile</h1>
+                </div>
+    
+                <div>
+                    <div id="logoImgs">
+                        <img src="Twitter logo white theme.png" id="whiteXlogoForNav" alt="">
+                        <img src="Twitter Logo black theme.png" id="blackXlogoForNav" alt="">
+                    </div>
+                    <h1 id="premiumHeading">Premium</h1>
+                </div>
+    
+                <div>
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    <h1 id="secondHeading">Bookmarks</h1>
+                </div>
+    
+                <div>
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <h1 id="thirdHeading">Lists</h1>
+                </div>
+    
+                <div>
+                    <i class="fa fa-microphone" aria-hidden="true"></i>
+                    <h1 id="fourthHeading">Spaces</h1>
+                </div>
+    
+                <div>
+                    <i class="fa fa-object-group" aria-hidden="true"></i>
+                    <h1 id="fifthHeading">Monetisation</h1>
+                </div>
+            </div>
+    
+            <div id="setNSup">
+                <div id="setNSupHeading">
+                    <p>Setting & Support</p>
+                    <i class="fa fa-angle-down" aria-hidden="true" onclick="visibleSettingOptions()"></i>
+                    <i class="fa fa-angle-up" aria-hidden="true" onclick="hideSettingOptions()"></i>
+                </div>
+            </div>
+
+            <div id="setOptions">
+                <p id="set1">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    Settings and privacy
+                </p>
+                <p id="set2">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Help Centre
+                </p>
+            </div>
+        </div>
+        
+
+
+        <div id="themeOptions">
+            <i class="fa fa-sun-o" id="sunForSmallerScreens" aria-hidden="true" onclick="blackTheme()"></i>
+            <i class="fa fa-moon-o" id="moonForsmallerScreens" aria-hidden="true" onclick="whiteTheme()"></i>
+        </div>
+
+    </div>
+
+    <div id="emptyPart"></div>
+</div>
+                        
+
+                                    <!-- S E A R C H   T A B  -->
+
+<div id="searchTab">
+    <div>
+        <input id="searchBar" type="text" placeholder="seach X">
+    </div>
+
+    <div id="trendsHeading">
+        <h1>Trends For You</h1>
+    </div>
+
+    <div id="trends">
+        <div class="trend">
+            <p class="trendHead">Trending in Pakistan</p>
+            <p class="trendItself">#BabarAzam</p>
+            <p class="trendPosts">16.1K posts</p>
+        </div>
+        <div class="trend">
+            <p class="trendHead">Trending in Pakistan</p>
+            <p class="trendItself">Shaheen</p>
+            <p class="trendPosts">10.6K posts</p>
+        </div>
+        <div class="trend">
+            <p class="trendHead">Trending in Pakistan</p>
+            <p class="trendItself">Aunty</p>
+            <p class="trendPosts">18.4K posts</p>
+        </div>
+        <div class="trend">
+            <p class="trendHead">Trending in Pakistan</p>
+            <p class="trendItself">#INDvSA</p>
+            <p class="trendPosts">16.6K posts</p>
+        </div>
+        <div class="trend">
+            <p class="trendHead">Trending in Pakistan</p>
+            <p class="trendItself">Hassan Ali</p>
+            <p class="trendPosts">2,822 posts</p>
+        </div>
+    </div>
+
+    <p class="showmore">Show more</p>
+
+    <div id="videosPart">
+        <h1 id="videosHead">Videos for You</h1>
+        <p id="checkMsg">Check out these popular and trending videos for you</p>
+        <div id="videos">
+            <div class="video"><video controls src="https://player.vimeo.com/external/404141637.sd.mp4?s=f338050f9f6bf89f95c136bea510a2e315d88fef&profile_id=165&oauth2_token_id=57447761"></video></div>
+            <div class="video"><video controls src="https://player.vimeo.com/external/307794471.sd.mp4?s=ee16494293314bfab7998152d89bb93e9ffc861c&profile_id=165&oauth2_token_id=57447761"></video></div>
+            <div class="video"><video controls src="https://player.vimeo.com/external/121172636.sd.mp4?s=ef85ced14ca2d25edc48830bc237b41403437a80&profile_id=112&oauth2_token_id=57447761"></video></div>
+            <div class="video"><video controls src="https://player.vimeo.com/external/269411108.sd.mp4?s=76bf07a4dca1f1c0ff2de5386fdb862d8a320b41&profile_id=164&oauth2_token_id=57447761"></video></div>
+            <div class="video"><video controls src="https://www.pinterest.com/pin/980799625074740739/"></video></div>
+        </div>
+    </div>
+
+</div>
+
+                                <!-- C O M M U N I T I E S  T A B  -->
+
+<div id="communitiesTab">
+    <h1>Communities</h1>
+    
+    <span id="searchNAddIcons">
+        <i class="fa fa-search" id="searchIconForComm" aria-hidden="true"></i>
+        <i class="fa fa-user-plus" id="userIconForComm" aria-hidden="true"></i>
+    </span>
+
+    <div id="communitiesHeading">
+        <h1>Discover New Communities</h1>
+        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+
+    <div id="communities">
+        <!-- community 1 -->
+        <div class="community">
+            <img src="https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am9ic3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <div class="communityInfo">
+                <p class="infoHeading">Jobs Corner - Pakistan & Abroad</p>
+                <p class="members">1,202 Members</p>
+                <p class="membersPP">
+                    <img src="https://images.unsplash.com/photo-1682687982298-c7514a167088?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" alt="">
+                    <img src="https://images.unsplash.com/photo-1701743801469-57e71ae3da6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1701083991000-8666b3b990db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1674675647693-777780779499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8" alt="">
+                    <img src="https://images.unsplash.com/photo-1703750960118-1c49d4a9fa78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="">
+                </p>
+            </div>
+        </div>
+
+        <!-- community 2 -->
+        <div class="community">
+            <img src="https://images.unsplash.com/photo-1594311436376-14cb76e46be5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXJkdSUyMHBvZXRyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <div class="communityInfo">
+                <p class="infoHeading">Urdu Shairi</p>
+                <p class="members">4,455 Members</p>
+                <p class="membersPP">
+                    <img src="https://images.unsplash.com/photo-1499557354967-2b2d8910bcca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljJTIwcHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWVzdGhldGljJTIwcHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFlc3RoZXRpYyUyMHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" alt="">
+                    <img src="https://images.unsplash.com/photo-1500099817043-86d46000d58f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWVzdGhldGljJTIwcHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFlc3RoZXRpYyUyMHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" alt="">
+                </p>
+            </div>
+        </div>
+
+        <!-- community 3 -->
+        <div class="community">
+            <img src="https://images.unsplash.com/photo-1611879531844-24b7ddf40b26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VmaXNtfGVufDB8fDB8fHww" alt="">
+            <div class="communityInfo">
+                <p class="infoHeading">Sufism</p>
+                <p class="members">928 Members</p>
+                <p class="membersPP">
+                    <img src="https://media.istockphoto.com/id/1469727783/photo/girl-trying-trending-fashion-accessories.webp?b=1&s=170667a&w=0&k=20&c=7fUwlcFTj2L78zxKjxD1AMXJ_laATKYOsuxmOnx8ZUo=" alt="">
+                    <img src="https://media.istockphoto.com/id/1616907234/photo/young-woman-holding-hands-in-square-shape-with-blue-sea-and-blue-sky.webp?b=1&s=170667a&w=0&k=20&c=GcZmaRHEg-qpopF3MG4kH_MRv1KEepCAMakOJiMdx78=" alt="">
+                    <img src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFlc3RoZXRpYyUyMHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1667579011495-fd836c6cb2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFlc3RoZXRpYyUyMHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" alt="">
+                    <img src="https://images.unsplash.com/photo-1502139214982-d0ad755818d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFlc3RoZXRpYyUyMHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" alt="">
+                </p>
+            </div>
+        </div>
+
+        <p class="showmoreForComm">Show more</p>    
+    </div>
+
+    <!-- communities end -->
+    <div class="endNotification communitiesEnd">
+        <span class="dot"></span>
+    </div>
+
+</div>
+
+                              <!-- N O T I F I C A T  I O N S   T A B  -->
+
+<div id="notiTab">
+    <h1>Notifications</h1>
+    
+    <div id="notiOptionsTab">
+        <span id="allNotis" class="notiFlexItems" onclick="allNotifications()">All</span>
+        <span id="verifiedNotis" class="notiFlexItems" onclick="verifiedNotifications()">Verified</span>
+        <span id="mentionNotis" class="notiFlexItems" onclick="mentionsNotifications()">Mentions</span>
+    </div>
+
+    <div id="slider"></div>
+
+    <div id="allTab">
+
+        <!-- notification 1 -->
+        <div class="notification newNotification">
+            <p class="typeOfNoti"><i class="fa fa-bell bellForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                <span class="notiItself"><br>New Post notifications for <span>H.</span></span>
+            </p>
+        </div>
+
+        <!-- notification 2 -->
+        <div class="notification newNotification">
+            <p class="typeOfNoti"><i class="fa fa-heart heartForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                <span class="notiItself"><br><span>TIGEr-Imranism</span> liked you reply</span>
+                <span class="reply">❤✨</span>
+            </p>
+        </div>
+
+        <!-- notification 3 -->
+        <div class="notification">
+            <p class="typeOfNoti"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></p>
+            <p class="NotiContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </span>
+                <span id="reply"><br>replying to <span id="replyingto">@iAmBeastyy</span></span>
+                <span id="repliedtweet">
+                    <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, et 🍂👽.
+                </span>
+                <span class="reactions space">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart colouredHeart" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">25</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </span>
+            </p>
+        </div>
+
+        <!-- notification 4 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-user-plus iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <span id="followers">
+                    <span><img src="https://images.unsplash.com/photo-1703842205119-f517a1219065?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8" alt=""></span>
+                    <span><img src="https://plus.unsplash.com/premium_photo-1703343320518-f2996aa101a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8" alt=""></span>
+                </span>
+                <span class="notiItself"><br><span>Alex.</span> and <span>J</span> followed you</span>
+            </p>
+        </div>
+
+        <!-- notification 5 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-heart heartForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                <span class="notiItself"><br><span>TIGEr-Imranism</span> liked you tweet</span>
+                <span class="reply">Lorem ipsum dolor sit amet 💥.<br>#WIvENG</span>
+            </p>
+        </div>
+
+        <!-- notification 6 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-heart heartForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                <span class="notiItself"><br><span>H.</span> liked 2 of your posts</span>
+                <span class="reply">❤✨<br><span class="showmore" id="allTweets">Show all</span></span>
+            </p>
+        </div>
+
+        <!-- notification 7 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-heart heartForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                <span class="notiItself"><br><span>Ibrahim_66</span> liked a post you were tagged in</span>
+                <span class="reply">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Culpa neque tenetur soluta eum! Ex, accusamus.</span>
+            </p>
+        </div>
+
+        <!-- notification 8 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-heart heartForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <span id="likers">
+                    <span><img src="https://images.unsplash.com/photo-1682687220161-e3e7388e4fad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+                    <span><img src="https://images.unsplash.com/photo-1703692473067-ed003fcd3d73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+                    <span><img src="https://images.unsplash.com/photo-1703796970924-7d50bcde828e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+                    <span><img src="https://images.unsplash.com/photo-1703706376543-0da03ff38230?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+                    <span><img src="https://plus.unsplash.com/premium_photo-1664382465652-954fec375865?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
+                </span>
+                <span class="notiItself"><br><span>Seebo</span> and 17 others liked your post</span>
+                <span class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit 🧨</span>
+            </p>
+        </div>
+
+        <!-- notification 9 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-retweet retweetForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+                <span class="notiItself"><br><span>H.</span> retweeted a post you were tagged in</span>
+                <span class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione 
+                    similique hic neque, deserunt unde aut repellendus consectetur, totam cum, 
+                    est eveniet?</span>
+            </p>
+        </div>
+
+        <!-- notification end -->
+        <div class="endNotification">
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div id="verified">
+
+        <!-- notification 1 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-bell bellForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJsA4QMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAEYQAAECAwUFBAYIBAYABwAAAAIBAwAEEgUREyEiMTJBUWEUI0JxBlKBkaGxFSQzYnKSwfAHU9HhFjRDY4LxFyVUc4Oisv/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EACYRAAICAgIBBAIDAQAAAAAAAAABAhESIQMxQRMiYXEEUSMzgTL/2gAMAwEAAhEDEQA/APkUnZz87Miw0NRF6vKDWZZ2RmaTEqhvqb5J1g+QB2z2WiB3DdL358L4qJl0wKZdLeJRq4nCZWTsUmwTr1W6JFFinRMiLReLT/3HplHXTw6h0+GK22hA6d773KGCkXzFLVTgFiFVTzuitgidmccxEhEaqSK6JONEANCBaSL9rFbgb2rxQEFo8bJG8ReEST48IMdaaDFEypER06eMQZfENQCQ0trvZ3lHRSgBJ36ziXlTno6rAbYCEs+TRiOkhIdVQ84tk3sKZ1iRDVVTEQdIGRbMSIS3fuwQ2Im8L9NIkPxTlGl8mWyz0hnGHcImqvvDy6QFZojMTIi7qEh90cm2Wjq7PUX4vkkMpSzhl2WKy1E3WRDwHgPmsDSjSC5eTttM4UnLS0v9kQqVXrdL+ULZNit5qvd8XlGtk5aRmGWO0OkOHpZqLapcIrm7JaC0hcOrCbuxMPhyuicJ1Gg03sz0zJDLzhDvCWrV14LFhWe/Ls1Hulu/1jZ2ysjguj3ZFSlPFf7RmZ9CaASMe6EdNXOBHkb0GUK7Fc4mF3YFURDqgRFFoCbMaS9aIPOkb1VUEjKOmGOfi8X9YtpLYGRpdMKmiKkdXS/nBbDz9oMtDNu0tM/Z6f3nETF9pkdI4TjekuF/GO2cDps4lPdNjUVX6QL0agt5lo9W6wPrbVW7bA8jITgMuzLTGIxVTzu45RdPoPZmMItJXkRcfJYJbnpkJBpiUIdQrVsT9rdCJuhteSAyDRm67L1d3d4dq84lPWU+ANFhU4l5U8Fu+SwI2r7UsVBU4mktWcO2raxZZqUOkiZvLVffsuhHkugrHyZiZR0DFsyIqS0jyviuXIQmdY+KrVsy4LBb/wD5hUTWl0S1eXOKWJB10yo3R3i5RdPWxGqZJ8uzmLjQ06qtOzPkkS7VWEz6xDVVz8o68e8LtRae7pzzTbf0gZgMXvKmxGrd2e2MlfZrI1j6rn5Y7BWH+H80ehhAZ+aI3tZVVeHlFiE66y04boi03qEf0RIFaYrPQQjqSJG2LrxDURfJLoAStxCdeqCoiLVp4Jx+EMTdFqWLs4jgFcIkQ5qV2yKEPsQYjRCRZCVWzPanVIJAhoacwqadQ9V6XwsmMATrhY1Tol90dmyC2ZQQlioKonBQqeS8EvgaZN2YnMQGiKrdHbT0hhKMYp1NFSRbw8rtsCTpBRTNSxNWbUY0+t57Ejio/IsiR6am97p5QVMzFE+TEwxVLNjut9eMC2rNYpiVRU0oLeJtuTZsgRbfYHGioN8aKvW9kHyz4y8sNeohLu2x4IvGBmGCngaJoqnd2kco4oOyIO1iJOleI6r7oaVPQOghmZ+sjLA1iVFqErtq9Uj0xajvbHxNgaakER5ImUSRyWlJmWfaqqEUJwet2aZwE6wTrxF4nC+eyFSTYdUMHJ4gnGhl6REbuqXw/ZtuTlzfKYpfIt6riqJlGJ7XhHSAjUOmKe0FXUeqreg+mNGVGl+kMXFcl2KnyLzuTyil0H548B0dIjV/eFsm8QapciF3d09YaWcRNG6Uw7vaaiG+FnHFWgp29ig5fCepwqqS+EaBHcKTdIGhqcu7sblRE4rC2bR1qqjUJeL+kVSpOy4E+07+IS2r0jSWaB0y94xl2WO1jiCV9LY5XdY82My7LDLOkQiQ1jsuVOsRdBq0HmhAS3fdziRtutHSG9uwF1Xk3m0WzssXYGnPCJbscdk3TZIWqREvCX6cotftF+beGWwhqw0Cmm7NIjjEDIsYRY434nROECmhli3YO406GqY0i2Qh1vu5cY6VX+ZOkSHVVsWDptGJuTaf9UVKmrjlthcziugVZfmgp2JKl0FywkbJFS3vKThDtVFTZ5RU5NEDzpVYY4YiLY/6iJxy4w2sRGPpJgQ0sON98JZoipti/wBKbOYlzwJSkXS1N8NueXSNexqtGZtZ8TASaawKW0q6qu2FAfvpBs006Bk3N70QGlpkmw1F4fKLLSJvvZTjD60eiNH+1847BBoPs9SOcabOkRbEjq+V8DOfbD2Qi1EurjBcj3Us64D7eKTf2fG5Y5JJQ8IhTp3i47NnWEvbYSU3Ll3BTAkJU6h59fbFzjE1aEsLUowRND6o7vtjiOO10zpfabtV94dbvKHVhWg+EmTYfYN36hK69eF6wl0rY0YqzPCz9HnSDtT9NJack5wSw27QJB4R1FT+74JtcR9USf8AFyRFimxZUndOLVT4eC/2gSlcbYUrdIY3y0uy6+6XevNphtltXhf5Rm5xsXT8VReGnZyjQz7LUufaZt3Ep00jwTknKFiiIMuzbQlV4SLgi8IHE6Vh5NaINyzsjLCQfauDV5JziSk6cgRGQlUSaqc705RbJzAzH2tOltQ870y90SFGgsoRxRqL5pDZbEa0jtmyPaAxXfDeWrikLLTfo7gPzbMuUObFmX3Zl90xq00jTsyyvujP2itdpP1lV3i/DKDC3J2atHJaz5qYCppoiH1oNb9HbVPck3C/DdGlsJ0XZMRAaRb0xtrFEdNGqIT/ACZRdUehD8SMo3Z8mSzpmU1Oyzw+HdXP+kN2maDEpsadKEOIOS/tPlH2NWWjDW1V+KE3plIMTFjk6ekpckMSp4Xoip7lWA/yclTQsvxcU2mfLreJoHmilBJund435RCQaI5B+ZpZIR3qr0VL4qtQiCZp1FVqq6LBCD2uTdJprVTSQ1Xe3rFk8YI427dlLcwQGJNVYQ7pbMvZGlacYOfHFpIcKikdqcb74zQt6xbAtQjqEeHFUi8Ztpoy7OwRf7hFsSFl3oMJUMZeVlgtjHmNTQkmJqzzyRYKtdvtcy7MtFhi2NPK+75wnmyrea3am20IqeK9YgdoO/SRdrEhYw0TDEcukJUn0UyjRxkmKH2JjdK4ah8EVuphYTDtNLZIOIO27rB7KMTcyL+kSe009E5pwWKrTaHG7NUTYk5TUXlBUt0TcdHJp3s84JNaREUIiHj/ANpBFqTDE68w+1iCTbdRVFfeicOkDuMYtmliu963pHVvf2gSSEjBogES21DzS75Q0erFba0CWk722qZ3Sy0jsgO6sN7UIw5fl2sEhBoaiLS2JfvOF+FR3BiNWZdU6RaErWhZA3aij0ToH1Sj0OLZXhUB2sKsISpGrb7Y4w2ToEQFqq3aucecfLsGGZbpaR+cMPR6WHGF86XBEaiHptT2wsnSbCgi1nCaeY7X4W0ES4rwWCkUcHs0iRVEK0tjxVU2qvBICmU7XaWuoh9WnYirsygtqb+jHnRlGhcd8RFnci8oi+kkOu2CWdKPzZl4nW94S5Q1kTfAHWw1UlqKm65eSRbLKNmU4TVT72oquA81jqS9AD2fEKp1Tcq2X57LojOWX0VUaQPaIC6EsxNujq1kI/BFXnATMtWbskBYY+EiLj5cYZPSfa7VafwhEdIdKtiQTa8lKykg66ZCUyLlDlPBeHzSHXWhat2IpeToMRp3b9RcesBTJkbxNtVC0O71hpaizIYQy5E5SNLlI8+cBsVNTNIeL2xSDb9zBL9ItlHhlJN1gNUyRUiI35Iu1YW2hJPykyWK04I+EiHJb0Tj53xZKlhWkLjtRDiaqdt1+cbC23Rds19gxEqWCMvNFvS72IqwJzwkq8lOHhzi230Tl5AmpBqWlCFsqdTheG/avVYKkJXClhfl7YtHCzInKQo05qq35okEytMwyJaSaIU9ypGiSz8WyibAaWibWoRyvTlHIpvyelgqO+jFutT0sLRuk47/ADCG6/2cICtabnJgJyWmJ5kRJkibZwCS8URVuqXJV0r7oV2SPZzlnAJtkScpbqJEruW5URNq8I2k3INTEs63SJVNkIlTsVUVFuX2rAUqZpx0fFpiaadPEpqER06blgZtoQN3eEfDDO1bOdA+0zA4bQ6Rp5pALp1s4mlwiKnyjti1R48ky2UVgDInS1U92XnlnAs+VbIthveKniiQcFntOyzRA7vafOKOyk0YiY6iGkRH5rGTjdiW0qHMszI/RrQg1vCmIRbVVE58EhG+ZO1FVU02SVUwQspMtMkX+lukMRF9iUs19hp0cVy4qac155xNKna2PlkixX5btIlKDgND4ufOKnmXZhnHB0XBqXSRbFS/bAbkoWCLoFveGD5QSlDYcaaqEt6rYd22+HaS2gdhFhusSM4L82OJtpHbnwRU5ZwXaDrExONdnlhlqhpISyz9kBuSrTQC6b4i7VW23tuTaiRz6QaOcqmBLSSU8luW+7yuhLvob4ZE8WRnBflGscmyXE6iv6wJNNfWSI2ipc1jVtzzhxMvNTBujL1CJFi1DllxFEgSZOsJZ8yImhHSXPPZ0WGjLwaStAVP+1HoZdoH+QMejZMXFGKMidpr1FnD+x5Qgk8WnvXhpb45bVX3XwCLEs1SJ946RaqeCXRoG3P8sw00TGC3SLnszvinLLWgxSYoFp2XeEqibEiTxbU5/OOFMMBS4AlikS1CWym/KGk7JE1LYZ0k6I1VVXpcq3pAjMk0YYhjTVq/tGTVWwPTosZeI5wu0FTiCgj5Q0GaIAEQIR8Ps4wnSr6VaGnT4i5qmxEjzD5TAUmIiTZe3PnEZQsaMqC2yFoGhaqcqfqq+XuiNqOYU4IuulgOOIbg1cU4x5G6wIe8bEvs6c/P4wrdIqxF0qh3NO1eUPBWDro0kvMtBJzLhj3RPeHlzSEjr/1knGtNRd35QU2+Jy2G0JC76xbL+KXR6Xka6SddpEbyq8tt0CCUbs0pNg8u6XacSnUXrc+MaQXO12VgU4mI2oC8PO5URFS72QknX5ZqQdwmiEsqSLaqrB1gThTDLVAiIs73XPbCzVq6KcfI4vR70at5oJZqWm9JN6avLnGjt637VrGWskmW2G2kNxwtSqirdfdyTpHzu32exWw+IaRIqx/5bfjfHGrcmWqRaKmkafjfDein7kdHruKxkfSrL9H7VdqfP0hLFL+WIUIufBVzXJYZ2PaVoSU4/KWhMtzbDLZmUxSorkt1ypsXPil6LGDsb0ltpqW+rtSrgjqIib/vtiz/ABDPWxjsO0jVqcIRuuFL1uu5bIHpS8jvmilasalOsWhMtUYeAOohLivHKBBkGApda9ZTISHLPlCaUlq5nA1Vbw8Nm2NI47i4TjXdsCKiUR5ZY6RCEsuyl82JdkmGmBcHDUxLlCqyJiufIjERItLYl4kuhu22IPYhiRDh0YPRYqtSzmAwHGqhfcGof0T5QvHJdM047OLLD2merLTSJU1ZZ8IzM+wITgkBVD6w8o08pZWLZovzD49pqWqrxIi5pAczZvZ2RINNTlTYlxVFiqeBOUL6FpjWyQ6aaRw+kMGHhm5Ziz6W6W3FPTtXJb0+MFPONGyI6cemgh+OyA3WhaOWm5f1tVO1OiwinZnCiVoSwngN01VeHil2yBFknQnBxRpHw1DB7k5hTlRtVEI6fPz8oYzDxO0zroiQt0kLfRcs/bGTkg0mxS1KOtfVjEcUhrEvu8oFm5AuzYDRE5T3pCPBV2wwtCdoPQOAQ31Ft27LvjFViThOzItmQ0kSiTlPG75Q1yWxWldCXtT/AN78sejbYTXrS/5Y9D+r8G9P5MK2LEizU7qnMiEuXnzhhKzJTbJC6Xfl63LaiXQtk5NrGdfmHamGxSriqqqZInWDZZuTmLVardJh2ndLLhFJJMkmQaZdm5zsxlSQkg1VcIfOSkm1uOi403pEar71Taq8s4Sm5hT7pBSVOkquibfbHSdEGSEyGori84WSYYv9gs4+7KTJEerVVTwuXrEMAQAXAdLVvEUTnMKYme6KoS00xc1JOy5iOnCLTSRJmq/KHbSRkWyloOhThbo71XnesctKSopnWnaairEeu3KPGLRzmG1SIiPeODsvuRMukETboussSmkiZH7QfCq84ROmM3SoIs+zawfJosciFO89W/bf7YstJhiUqxRqqHdquuVE2xXY778pP4DToi05cDhc+OXKJ+kqDMBTikXe0lTsuuhO5mbWIpsuTK1gEcXdKnD8+N8MnJF2UZ+jwdHvHREqdqZpx4QtatcbJPDxahp3W7lVOSLwT2wjmrSfmJkXwIm6XKxpLNFyzv8AYkXwlJ/Asao3Voti7MusTDQkTZahIb/JfJYSOeiczPPE5ZjQ4XiEiuRPasVB6V4sgTdoME5OD9jNN3IvVCTinT5QuP0htMhJtmccZbLwslT8Uz+MLHinF6Z1z5uOUdoaOejNvyId7IvCO8OHq+WyDX2P8PTjUo7qmSYQpsfUUs0FOqJcq+caH+GPpWMlY9oS1pu1DINrNNkRXqYkuY38VqJPzdI+fWtOv2hPvzswVT7zim57dieSJcidESOnG1s5mw9t8QnMTHwypUqqtvRILs5591mqYfpaqWkYzLx1siNO7qjrM2614tPqlEp8Skhba6NxattNADQyhah8XPK6OSmLNyzD7RETsuK1D0vyWMm3aDRvDpw6fWzS/nGqsl50waKXpEXNJU9F4xzT4lBKh1Nvsvs0is+cafdaxMQqib5X7Vgm3HHe0kLWGQ01D0RYHVx8J90ahpcGir97ITI6XbCF0ixRGkSHlCpZKwuVaOT7lFpC4Alu0uVceUNTalZiWYmWiwBLRh1bV5/CB5yVEJZh8HSJ1wlAqhyisRalPERNESf8V6QXTSNk7IPTTXbBJ0t0vD0S66Fzr1DzuoiGrdqW7PNMosmGRdmRda3ScX2RS9hG8WmnSoj1uisUhLLkDtEg6J1EQ6hKLLKEsFpirTTX5Kq3QSyyPZnXwKnudIjx6Xx6y5UglsQxLUNIl7YnN+1oZdh3Zy/ml+aPRLshfynPzR6OfF/sfIyoELrLRU0iO8NW1YrnmvrhasQsiq/SC5IaAqBqpofnFqs4Uz3rRYWW9kucehdM5krJU/UxcMdTZJ3nBeixJ5vue0zFPeDUJNx0gF1km6sMsTU3yTnBczLsBJsMNFUO6Rc4m5bCqSFllmLVImIltISLgsEzo9oZdrL8OnpFj7DWDiNNEIt3hVzKIsszJ2Ow5MEI94mH+FYLauwx2dskHewO1jSLzeE2VPG/POLpiXKXAa6hGpBKm7NIfz8+LsgwwDQkJFqcb4XZ3p5rGc9IpmuWYGqprEqqp48r4RPKWh2ktAky9J2eBFjuOOkS6S25bISvWpMmBMAWG0W9TtXzWOWw4J2k/Ru5D8Ev+N8BJHTGCWxWSjqLHI2voPYLVp2VPDMNVdoKgS5Upfenkqr7odujJXoytjnRaTBGIltqEvwrf/WBGxjVS3oXaLRzNZCOGLgN8a9KoipcuW2HHoT6G1vdtthqlhka+zl09bqvKNaGxZl3ZOZsxmmYHDKabQsPjTkqX8r1uW7pAMO/Sqd+kLemS8LZUe1NvxVU9kLMPRDoV9gppAzi64KdWgKoDRIDAdRYKlZl9r7J0hEi3asvdAixcK0QrSfZj6BKiU3LMEdI1NqYl1u2QNLMv4JWgYi202SCJZa1vzS6B7IXtFlS0sbtWpSIh4LeuV/ldDNWH2gw7QH6myJYdPPair1jgdRtFP8ArZV6QGx2AXJd8hfcKoqrsuiImyFlllRJkU7q1VCPHjHZ9SOTEWiqIRQi4+d0D9noNoaiqK4vJLr74dJY0IpWwyXeadP7pX6eVyZQMbBTEyIgPhKmnZlnB8qg2eyTn2naLw3di8PhHJwhdAWpelvD+9n1hYunoL/QE2T7tLUvp2Veey6GpzJTxuym6Mu3pIcti5xSI0ThONasMUIRHiq8IUzs0+7UVVO0SHYua3rfBSzejL2rZV2wv/WOfmj0A0fumPRf00JY4s08WWYYwhGlxS1FdflkkHWuy7RLOOlVjMoXO4evuiuz5MbTmZOSMqWicQHC2Yaet1ht6USrQWbJlLkQlhKNNN16IuS/pEpNZIaKbi2KrObfofE6S2Ultv4IsVzL3Z8KuoaSp6L1RIqemn2pZqhghISpxOd3BF2LHVln5uTJ2bHTVpItqdLusZXexaV2Tl5hqYqGbKloSrpHx+cEvyb5zgywELjQihNt1bEXNYSEpYOgaR8XS6Glktvh9b3XaVGmrh7YMo0rQctUMWmOzycyIP8A+mtPRYVzTLp2VJy2LU0TlQj1iyYmPt9IsNFujtrW7O7pEpVsuzMNGNWGVdQ7fKEjrY1oxs2v1x//ANxfgsVpEn17538S/NYgix2oUlH1r+H7WF6MMEBbxFq6qa/pHyUY+p/w/mBd9GGG6vs3HKvzKqfBfjCz6KcfY5mGXTNrCfJsW3Ki0otaerns9kF2xMjZliOkfhbV1z9E93zj2muMx6f2sPYCs8C7+YJNPIBVL1Xlfknv5RKCtlpOkYNlCMCcd3ivUi6rmvxi5GtFVUc3ApiWMPjKkY7DmNfZH8M37YspiemJwpTEzFsm0XLgq5+32wn9MfQX/C1mtTZ2m3M4jyNC2LKp4VW++/7vxixn02tjSIW49SOkRIRXyTNIH9I7fdtizRbnp7tZNuITY6UuvyVckThekJTG0ZDxxaJRW5vx0V1wBB56MONBP4bpEI01D5pt+HyjUz1sEGKJtYlQl3fRE2xgpV/s8y0+NOkuuzYv6pGnuF21e01UjhqO98Y4+fj9+T6HjKlRKREgq7PVgPDUQ7TT7sMH2JkHhbpFwqUEackDzgOyxKYeJ9p2kW3FJweSJx9sFPvC7ONPg/h0lTTzTmsTv3UTcW9jeyLGftDtLbTWILLalUPr8M4zcxLC1Mu6edQlzuzjd/w5tXsnbpQGsTVWJbMkvjB27aXaLSdcAaanCKnqqrlFopdIMotJMqGdmQZplxpIt4hG/LpAqpRqdFwiIqiIotk58Zc6ndXdrpp+fSLnVE2XSpKoRrbKrJUXbBSxfQVtdgGIHqx6A8UvWj0UoTZrJWziN50QqbGXeTki7b/bshv6ZsEb0iXhwFp/ftjO2baztZVjUJOJpjaWhLFa1sWfJBpLAHrtzv8AcixySUlNJo6I16TozcgQy7ItutOONUqVNOwlX4QDOzj7pjKYQ6r6S43cI1vplZTtjzIutFpK7d4psW9PO9fbGWeTtZ1bro+IcvhBqnbI04ihW3Zd51gyLV4ecNilhOmuoRLdKrYSJn5+UFzco0DOPTiVN04hFsWApJx2vDm6R1Vt1etfz6wXLJWBppglpl2eZ3SppQW3CHpmsVuzMyEtUDo92NYkPvuWGtoWa7aEy++GJSzcItlxW69boRTrgtSe8O6tI05ouy5YeFNI0k0Z0yrMiPeLV748kRWOpHUEkka3+HVpdnnH5Iy+2uJv8SZL8LvdGSTxfh/pHZWYdlJlp9oqXWyQhjNWhk6Z9btS2CsdmZm511kmMhlWxvrVbs0W/bnxTYkfNxm37QnH7QmyqdcL3dE5IkC2xaszaszjTZbukGx2AnTr1ibK0MiMbjjQZysKM4Bm3KzpDdH5/v8AWJOu0QOKQ7Yh0IsJY4gx4lojGBTXWUTE/vDFN8SFYBggS9f/AL9sO7LmGDlqZgqWhbIfNeCQhFfUgmUPWQ01VDp8+fzhJxyRh7YZ99ODTSLjNH6JfAzgE1p/1WSUSIuMFSDVDIuHpJ5xKv8AjnHfSJyWCfqq0uChOdFujni/e6B4NP8Aw5crtV+sh1Np4vOMnPzeFbD7+kqXi08MlW6G38OXK/SEhDdwS/SMlMl3zvrVKPxjQX8ki0n/ABxLnHq6i9a/T55x4pp11nDq3RpgZukzpiLQFFyR7Ddj0XUD6xR6DYBzZ4d802G8Tiaul98bx+1eyelTAtD3oiAiXK8OPvjA2eq/SApflWifFI0U+q/+IW3xCn/0SOTkfv8ApFuJe3/Rz6c2k/N2k1LGQ6W08N23NYyg/wCZEnd0rhKnlfn/AFh/6ZEv+JRS/LDT5Qtn0TDI7tVSZ+2Ei7SvyDkVSYzlDYAOyTGG4JFpp4pwWFnZR7fMsO6hZGsS6cM4EbJUUjv1c4FtZ91W5o61qRxBvTLKMlejZWguZn5kJYhAixxLUXNOHwhBa7VEgLpujU45TTxFdqwaTzpC2KmqilOUUelQiLEoqIiKRkpdcovBYtIndszqx6+OLHo6DFifYu+wfj/aKosX/Lf/ACD8liqCYm2lZjBxQEzvwQ4S4O2CjFZFXEkSIpE0jGOxF5dEdiqY3P8AlGsxdNyDkvIS0zQXebxcM8xTzuRYDRY0/pE6f0NLN1LQgpl7Yy8Ti7DJUWjFzZ0GLgeEqvdFAxYMMA1XaymzF+nuhcQcMSyRFTJYGteXI+8OmkSoEfKBJIyDsaCtyGdxdYYW+AjaoIKXIo3qic45mqmkg+Bh/DZa/SerdqZLT7oRTcn9fdECqqcX/wDSw+/hwif4rEbssIsvdGdtczGfmVEiTviTJfvLBX9r+h3/AFr7BHWSxiGnxQVLMO6qKah+MXShKIggrchHcXWIuGSBkvih8n0Toq731Rj0CVl6yx6GoU//2Q==" alt="">
+                <span class="notiItself"><br>New Post notifications for <span>Shadab Khan</span></span>
+            </p>
+        </div>
+
+        <!-- notification 2 -->
+        <div class="notification">
+            <p class="typeOfNoti"><img src="data:image/jpeg;base64,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" alt=""></p>
+            <p class="NotiContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Fakahar Zaman</span>
+                    <span class="username">@FakaharZaman719<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </span>
+                <span id="reply"><br>replying to <span id="replyingto">@iAmBeastyy</span></span>
+                <span id="repliedtweet">
+                    <br>💗
+                </span>
+                <span class="reactions space">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>23</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>14</span>
+                    <span class="react"><i class="fa fa-heart colouredHeart" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">25K</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </span>
+            </p>
+        </div>
+
+        <!-- notification 3 -->
+        <div class="notification">
+            <p class="typeOfNoti"><i class="fa fa-heart heartForNoti iconForNoti" aria-hidden="true"></i></p>
+            <p class="NotiContent">
+                <img class="notiPP" src="data:image/jpeg;base64,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" alt="">
+                <span class="notiItself"><br><span>Azhar Ali</span> liked you reply</span>
+                <span class="reply">Happy retirement B H A I Y U U 💓</span>
+            </p>
+        </div>
+
+        <!-- notification 4 -->
+        <div class="notification">
+            <p class="typeOfNoti"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></p>
+            <p class="NotiContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </span>
+                <span id="reply"><br>replying to <span id="replyingto">@iAmBeastyy</span></span>
+                <span id="repliedtweet" class="colorChange">
+                    <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, et 🍂👽.
+                </span>
+                <span class="reactions space">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart colouredHeart" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">25</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </span>
+            </p>
+        </div>
+
+        <!-- notification end -->
+        <div class="endNotification">
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <div id="mentions">
+
+        <!-- notification 1 -->
+        <div class="notification">
+            <p class="typeOfNoti"><img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt=""></p>
+            <p class="NotiContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1d</span>
+                </span>
+                <span id="reply"><br>replying to <span id="replyingto">@iAmBeastyy</span></span>
+                <span id="repliedtweet" class="colorChange">
+                    <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, et 🍂👽.
+                </span>
+                <span class="reactions space">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="react"><i class="fa fa-heart colouredHeart" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">25</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </span>
+            </p>
+        </div>
+
+        <!-- notification 2 -->
+        <div class="notification">
+            <p class="typeOfNoti"><img src="data:image/jpeg;base64,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" alt=""></p>
+            <p class="NotiContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Fakhar Zaman</span>
+                    <span class="username">@FakaharZaman719<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">10m</span>
+                </span>
+                <span id="reply"><br>replying to <span id="replyingto">@iAmBeastyy</span></span>
+                <span id="repliedtweet"><br>💗</span>
+                <span class="reactions space">
+                    <span class="react"><i class="fa fa-comment-o" aria-hidden="true"></i>23</span>
+                    <span class="react"><i class="fa fa-retweet" aria-hidden="true"></i>14</span>
+                    <span class="react"><i class="fa fa-heart colouredHeart" aria-hidden="true"></i>4</span>
+                    <span class="react"><i class="fa fa-bar-chart" aria-hidden="true">25K</i></span>
+                    <span class="react"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                </span>
+            </p>
+        </div>
+        
+        <!-- notification end -->
+        <div class="endNotification">
+            <span class="dot"></span>
+        </div>
+
+    </div>
+</div>
+
+                                    <!-- M E S S A G E S   T A B -->
+
+<div id="messagesTab">
+    <div>
+        <input id="searchBarForMsgTab" type="text" placeholder="seach Direct Messages">
+    </div>
+
+    <div id="msgReqs">
+        <p id="msgReqIcon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </p>
+        <div id="reqs">
+            <h1>Message requests</h1>
+            <p>6 pending requests</p>
+        </div>
+    </div>
+
+    <div id="messages">
+        <!-- message 1 -->
+        <div class="message">
+            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Ibrahim_66</span>
+                    <span class="username">@cric_insane<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">10m</span>
+                </span>
+                <span class="msg">you added reaction 👍 : See u tmrw!</span>
+            </p>
+        </div>
+
+        <!-- message 2 -->
+        <div class="message">
+            <img src="https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">TIGEr-Imranism</span>
+                    <span class="username">@IKTigers2<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1h</span>
+                    <span class="newMsgDot">.</span>
+                </span>
+                <span class="msg">Who won?</span> 
+            </p>
+        </div>
+
+        <!-- message 3 -->
+        <div class="message">
+            <img src="https://images.unsplash.com/photo-1703449511510-4e1665d4768e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Uzair Khawar</span>
+                    <span class="username">@ukhawar0<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">1h</span>
+                    <span class="newMsgDot">.</span>
+                </span>
+                <span class="msg">Lorem ipsum dolor sit amet.</span> 
+            </p>
+        </div>
+
+        <!-- message 4 -->
+        <div class="message">
+            <img src="https://images.unsplash.com/photo-1578831914933-6339766eb29b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">H.</span>
+                    <span class="username">@H_sy_ed<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">3h</span>
+                    <!-- <span class="newMsgDot">.</span> -->
+                </span>
+                <span class="msg">you added reaction 🧡 : Lorem ipsum...</span> 
+            </p>
+        </div>
+
+        <!-- message 5 -->
+        <div class="message">
+            <img src="https://plus.unsplash.com/premium_photo-1667752591582-bf14e70f7319?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">TWeetIt</span>
+                    <span class="username">@Tweeter_here</span>
+                    <span class="time">4h</span>
+                    <!-- <span class="newMsgDot">.</span> -->
+                </span>
+                <span class="msg">TWeetIt added reaction 💫 : Lorem..</span> 
+            </p>
+        </div>
+
+        <!-- message 6 -->
+        <div class="message">
+            <img src="https://images.unsplash.com/photo-1565551223391-be988013ee6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Usama Zafar</span>
+                    <span class="username">@usama7</span>
+                    <span class="time">5h</span>
+                    <!-- <span class="newMsgDot">.</span> -->
+                </span>
+                <span class="msg">you added reaction 💗 : lorem...</span> 
+            </p>
+        </div>
+
+        <!-- message 7 -->
+        <div class="message">
+            <img src="https://images.unsplash.com/photo-1600181957663-d8b921a1f516?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">webDev..per</span>
+                    <span class="username">@Hadzzz</span>
+                    <span class="time">6h</span>
+                    <!-- <span class="newMsgDot">.</span> -->
+                </span>
+                <span class="msg">Lorem ipsum dolor sit amet.</span> 
+            </p>
+        </div>
+
+        <!-- message 8 -->
+        <div class="message">
+            <img src="logo.png" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Abdul Rehman Memon</span>
+                    <span class="username">@stfu_okay</span>
+                    <span class="time">1d</span>
+                    <!-- <span class="newMsgDot">.</span> -->
+                </span>
+                <span class="msg">Lorem ipsum dolor sit amet.</span> 
+            </p>
+        </div>
+
+        <!-- message 9 -->
+        <div class="message">
+            <img src="https://plus.unsplash.com/premium_photo-1664392309182-017207df3537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fG1lbWVzfGVufDB8fDB8fHww" alt="">
+            <p class="msgContent">
+                <span class="tweeterinfo">
+                    <span class="displayname">Seebo</span>
+                    <span class="username">@iAmHere<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></span>
+                    <span class="time">2d</span>
+                    <!-- <span class="newMsgDot">.</span> -->
+                </span>
+                <span class="msg">Lorem ipsum dolor sit.</span> 
+            </p>
+        </div>
+        
+    </div>
+
+</div>
+
+
+                                <!-- N E W   T W E E T   O P T I O N -->
+<div id="newTweet">
+    <div id="newTweetOptions">
+        <span class="tweetOptions">
+            <span id="live">Go Live</span>
+            <span id="tweetOptionsIcon1"><i class="fa fa-camera rotate" aria-hidden="true"></i></span>
+        </span>
+        <span class="tweetOptions">
+            <span id="space">spaces</span>
+            <span id="tweetOptionsIcon2"><i class="fa fa-microphone rotate" aria-hidden="true"></i></span>
+        </span>
+        <span class="tweetOptions">
+            <span id="photo">Photos</span>
+            <span id="tweetOptionsIcon3"><i class="fa fa-picture-o rotate" aria-hidden="true"></i></span>
+        </span>
+        <span class="tweetOptions">
+            <span id="post">Post</span>
+            <span id="tweetOptionsIcon4"><i class="fa fa-superpowers" aria-hidden="true"></i></span>
+        </span>
+    </div>
+</div>
+
+                                        <!-- F O O T E R  -->
+
+<footer>
+    <div id="addTweet">
+        <div id="plusIcon">
+            <i class="fa fa-plus iconsInFooter" aria-hidden="true" onclick="newTweet()"></i>
+            <i class="fa fa-envelope iconsInFooter" id="envelopeForMsgsTab" aria-hidden="true"></i>
+        </div>
+        
+        <div id="tabs">
+            <span class="tabs-options" id="home" onclick="homeTabDisplay()"><i class="fa fa-home icon" aria-hidden="true"></i></span>
+            <span class="tabs-options" id="search" onclick="searchTabDisplay()"><i class="fa fa-search icon searchIcon" aria-hidden="true"></i></span>
+            <span class="tabs-options" id="communities" onclick="communitiesTabDisplay()"><i class="fa fa-user-o icon commIconForTab" aria-hidden="true"></i></span>
+            <span class="tabs-options" id="notifications" onclick="notificationsTabDisplay()"><i class="fa fa-bell-o icon forTab" aria-hidden="true"></i></span>
+            <span class="tabs-options" id="messaging" onclick="messageTabDisplay()"><i class="fa fa-envelope-o icon" aria-hidden="true"></i></span>
+        </div>
+    </div>
+</footer>
+
+                        <!-- T R E N D S   F O R   B I G G E R    S C R E E N -->
+
+<div id="sidetrends">
+    <div id="barBg">
+        <div id="searchBarforsideTrends" class="gray">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <p>Search</p>
+        </div>
+    </div>
+
+    <!-- <div id="outerDiv"> -->
+
+        <div id="premiumInfo" class="gray">
+            <h1>Subscribe to Premium</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nulla distinctio</p>
+                <div id="premiumbtn">Subscribe</div>
+        </div>
+    
+        <div id="trendsForbiggerScreens" class="gray">
+            <h1>Trends for you</h1>
+            <div id="trends">
+                <div class="trend">
+                    <p class="trendHead grayColoured">Trending in Pakistan</p>
+                    <p class="trendItself">#BabarAzam</p>
+                    <p class="trendPosts grayColoured">16.1K posts</p>
+                </div>
+                <div class="trend">
+                    <p class="trendHead grayColoured">Trending in Pakistan</p>
+                    <p class="trendItself">Shaheen</p>
+                    <p class="trendPosts grayColoured">10.6K posts</p>
+                </div>
+                <div class="trend">
+                    <p class="trendHead grayColoured">Trending in Pakistan</p>
+                    <p class="trendItself">Aunty</p>
+                    <p class="trendPosts grayColoured">18.4K posts</p>
+                </div>
+                <div class="trend">
+                    <p class="trendHead grayColoured">Trending in Pakistan</p>
+                    <p class="trendItself">#INDvSA</p>
+                    <p class="trendPosts grayColoured">16.6K posts</p>
+                </div>
+                <div class="trend">
+                    <p class="trendHead grayColoured">Trending in Pakistan</p>
+                    <p class="trendItself">Hassan Ali</p>
+                    <p class="trendPosts grayColoured">2,822 posts</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pplToFollow" class="gray">
+            <h1>Who to Follow</h1>
+
+            <div id="toFollow">
+                
+                <div class="follow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqtgwxGzSJ2DWzLQFhyk-cP5oM3KR_e4tEw&usqp=CAU" alt="">
+                    <div class="userNDisplayNames">
+                        <p class="display">Babar Azam <i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></p>
+                        <p class="user">@babarazam258</p>
+                    </div>
+                    <div class="followBtn">follow</div>
+                </div>
+    
+                <div class="follow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQebKzPjkLD_yZwjAEttDpZ6-wv4ctkdxPNBQ&usqp=CAU" alt="">
+                    <div class="userNDisplayNames">
+                        <p class="display">Fakhar Zam.<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></p>
+                        <p class="user">@fakharzaman719</p>
+                    </div>
+                    <div class="followBtn">follow</div>
+                </div>
+    
+                <div class="follow">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <div class="userNDisplayNames">
+                        <p class="display">Shadab Kh.<i class="fa fa-check-circle popularAccount" aria-hidden="true"></i></p>
+                        <p class="user">@76shadabkhan</p>
+                    </div>
+                    <div class="followBtn">follow</div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    <!-- </div> -->
+
+
+
+</div>
+
+
+<script src="js/index.js"></script>
+<script src="js/variables.js"></script>
+<script src="js/effectOfScrolling.js"></script>
+<script src="js/tweetChoices.js"></script>
+<script src="js/newTweet.js"></script>
+<script src="js/homepage.js"></script>
+<script src="js/searchTab.js"></script>
+<script src="js/commTab.js"></script>
+<script src="js/notiTab.js"></script>
+<script src="js/msgTab.js"></script>
+<script src="js/themes.js"></script>
+
+<script src="https://kit.fontawesome.com/334ac14b63.js" crossorigin="anonymous"></script>
+</body>
+</html>

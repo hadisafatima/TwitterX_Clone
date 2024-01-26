@@ -1,0 +1,866 @@
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    span#tweetOptionsIcon4 {
+        position: relative;
+        top: -1em;
+        left: 2.1em;
+    }
+    
+    div#newTweetOptions {
+        left: -1em;
+        top: 26.65em;
+    }
+
+    span#searchNAddIcons {
+        top: -3.7em;
+        left: 22.4em;
+        font-size: 0.7em;
+    }
+
+    div#messagesTab {
+        width: 95vw;
+    }
+
+    #communitiesHeading h1 {
+        margin-top: -2.5em;
+        font-size: 1.2em;
+    }
+
+    i.fa.fa-ellipsis-v {
+        top: -2em;
+    }
+
+    .community .communityInfo .membersPP img {
+        width: 6vw;
+        height: 4vh;
+    }
+
+    div#newTweetOptions {
+        left: -2.8em;
+        top: 23.9em
+    }
+
+    #tweetOptionsIcon4 .fa-superpowers {
+        top: 0.89em;
+    }
+
+    span#tweetOptionsIcon1, span#tweetOptionsIcon2, span#tweetOptionsIcon3 {
+        margin-left: 19.4em;
+    }
+
+    span#live {
+        bottom: -1.5em;
+    }
+
+    span#space, span#photo {
+        bottom: -1.4em;
+    }
+
+    .oneImage img {
+        height: 29vh;
+        width: 35vh;
+    }
+
+    #plusIcon i, span #tweetOptionsIcon4 {
+        height: 7.5vh;
+    }
+}
+
+@media (min-width: 376px) {
+
+    div#sideNavBar {
+        transform: translateX(-430px);
+    }
+
+    #plusIcon i, span #tweetOptionsIcon4 {
+        width: 13vw;
+    }
+
+    div#newTweetOptions {
+        right: -13.5vw;
+        bottom: -23.4em;
+    }
+
+    #communitiesTab h1 {
+        margin-left: 3em;
+    }
+
+    span#searchNAddIcons {
+        left: 20em;
+    }
+
+    span.dot {
+        margin-left: 13em;
+    }
+
+    div#communitiesHeading {
+        position: relative;
+        left: -3em;
+    }
+
+    #notiTab h1 {
+        margin-left: 3.7em;
+    }
+
+    div#newTWeetOPtionForBigScreen {
+        display: none;
+    }
+
+    .community .communityInfo .membersPP img {
+        margin-left: -2.8em;
+    }
+
+    .pp img {
+        width: 11vw;
+        left: 1em;
+    }
+
+    #tweetOptionsIcon4 .fa-superpowers {
+        top: 0.89em;
+    }
+
+    #profilePic img {
+        width: 12vw;
+    }
+
+    .message img {
+        width: 13%;
+        margin-left: 1em;
+    }
+
+    p#msgReqIcon {
+        width: 13%;
+        margin: 2.3em 0.2em 0em 1em;
+    }
+}
+
+@media screen and (min-width : 426px) {
+    
+    body {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    div#sideNavBar{
+        display: none;
+    }
+
+    .oneImage img {
+        width: 60vw;
+        display: block;
+    }
+
+    #otherTwo img {
+        width: 30vw;
+        height: 13.3vh;
+    }
+
+    #retweetedImages img {
+        width: 30vw;
+    }
+
+    #twoImages img {
+        width: 30vw;
+    }
+
+    img#firstImage {
+        width: 45%;
+    }
+
+    span.dot {
+        margin-left: 24em;
+    }
+
+    span#retweetedImages {
+        display: block;
+    }
+    
+    img.grid-items.pic2, img.grid-items.pic4 {
+        right: 1.1em;
+        position: relative;
+    }
+
+    footer{
+        display: none;
+    }
+
+    #header #setting-icon .settingicon{
+        left: 94vw;
+    }
+
+    #header .flex-items{
+        display: none !important;
+    }
+
+    div#profilePic {
+        display: none !important;
+    }
+
+    #choices {
+        position: fixed;
+        top: -1vh;
+        z-index: 2;
+        width: 86%;
+        left: 7em;
+    }
+
+    .options {
+        font-size: 1.3em;
+    }
+
+    div#homepage{
+        top: 2vh;
+    }
+
+    .pp img{
+        width: 8vw;
+        left: 2em;
+    }
+
+    .tweet {
+        width: 85vw;
+        left: 7em;
+    }
+
+    .grid-items{
+        width: 30vw;
+    }
+
+    #navBarForBigScreen {
+        display: block;
+        font-size: 3em;
+        margin-right: -1em;
+        position: fixed;
+        left: 1em;
+        border-right: solid 0.1px lightgray;
+        z-index: 3;
+        background-color: white;
+        height: 100vh;
+        width: 10%;
+    }
+
+    #navBarForBigScreen i {
+        display: block;
+    }
+
+    #profilePicForBigScreenNav img {
+        width: 10vw;
+        border-radius: 50%;
+        position: relative;
+        bottom: -2em;
+        left: -0.5em;
+    }
+
+    .tweet .content {
+        font-size: 1.2em;
+    }
+
+    img.logoImg {
+        width: 8vw;
+        left: -0.3em;
+        position: relative;
+        top: 0.2em;
+    }
+
+    .retweet .retweetpp img {
+        height: 3.5vh;
+        width: 5vw;
+    }
+
+    .iconForBigScreen {
+        border: none;
+        font-size: 0.7em !important;
+        margin: 0.2em 0em 0.7em;
+        text-align: center;
+        position: relative;
+        left: -0.65em;
+        top: 0.2em;
+        color: #192734;
+    }
+
+    i#optsforBigScreen {
+        font-size: 0.5em !important;
+        border: solid;
+        width: 1.3em;
+        border-radius: 50%;
+        top: 0.3em;
+        left: -1.7em;
+        color: #192734;
+        transform: rotateZ(-271deg);
+        padding: 0.07em;
+    }
+
+    div#bgOfTweetIcon {
+        background-color: rgb(34 180 236);
+        height: 10vh;
+        border-radius: 50%;
+        width: 9vw;
+        position: relative;
+        top: 0.6em;
+        right: 0.4em;
+    }
+
+    i#tweetIconForBigScreen {
+        position: relative;
+        top: 0.4em;
+        left: 0.45em;
+        font-size: 0.8em;
+        color: #192734;
+    }
+
+    div#themeOptionsForBigScreen .fa-sun-o {
+        position: relative;
+        top: 1.82em;
+        left: 0.55em;
+    }
+
+    i.fa.fa-moon-o {
+        position: relative;
+        top: 1.8em;
+        left: 0.7em;
+    }
+
+    div#trendsHeading {
+        font-size: 1.5em;
+        width: 26vw;
+        left: 0em;
+        position: relative;
+    }
+
+    div#searchTab {
+        margin-left: 7.9em;
+        width: 83vw;
+    }
+
+    input#searchBar{
+        left: 11vw;
+    }
+
+    div#trends, p.showmore {
+        position: relative;
+        left: 0em;
+    }
+
+    div#notiTab {
+        width: 83.4vw;
+        left: 7.2em;
+        position: relative;
+        font-size: 1.1em;
+    }
+
+    .typeOfNoti img {
+        width: 8vw;
+        margin-left: 2em;
+    }
+
+    .iconForNoti {
+        font-size: 1.5em !important;
+        margin-left: 2em;
+    }
+
+    #notiTab h1 {
+        margin-left: 0.7em;
+    }
+
+    span.dot {
+        margin-left: 18em;
+    }
+
+    div#messagesTab {
+        width: 80vw;
+        left: 7em;
+        position: relative;
+        font-size: 1.2em;
+    }
+
+    p#msgReqIcon {
+        width: 11%;
+        margin: 2em 1.2em 0em 0.5em;
+    }
+
+    #msgReqIcon i {
+        margin-top: 0.37em;
+    }
+
+    .message img {
+        width: 11%;
+    }
+
+    p.msgContent {
+        left: 1.5em;
+    }
+
+    #searchBarForMsgTab {
+        left: 13vw;
+    }
+
+    span.newMsgDot {
+        width: 0.3em;
+    }
+
+    div#communitiesTab {
+        width: 80vw;
+        position: relative;
+        left: 7.8em;
+    }
+
+    #communitiesTab h1 {
+        margin-left: 1em;
+        font-size: 2.4em;
+    }
+
+    #communitiesHeading h1 {
+        margin-top: -1.8em;
+        margin-left: 2.5em !important;
+        font-size: 1.7em !important;
+    }
+
+    span#searchNAddIcons {
+        left: 30em;
+        top: -4em;
+    }
+
+    .community {
+        position: relative;
+        left: 1em;
+    }
+
+    p.infoHeading {
+        font-size: 1.5em;
+    }
+
+    p.members {
+        font-size: 1.3em;
+    }
+
+    .community .communityInfo .membersPP img {
+        margin-left: -4.69em;
+        left: 12em;
+    }
+
+    .trend {
+        font-size: 1.4em;
+    }
+
+    h1#videosHead {
+        font-size: 1.5em;
+    }
+
+    p#checkMsg {
+        font-size: 1em;
+        margin-left: 0.7em;
+    }
+
+    img#whiteThemeLogo, img#blackThemeLogo {
+        height: 6vh;
+        width: 10vw;
+        margin-left: -0.15em;
+    }
+
+    img#darkthemelogo {
+        position: relative;
+        top: -0.95em;
+        margin-bottom: -0.8em;
+        display: none;
+        width: 10.2vw !important;
+        left: -0.47em;
+    }
+
+    div#newTWeetOPtionForBigScreen {
+        display: none;
+    }
+}
+
+@media screen and (min-width : 769px) {
+    div#navBarForBigScreen {
+        width: 3%;
+    }
+
+    img#whiteThemeLogo{
+        width: 6vw;
+        left: -0.7em;
+    }
+
+    img#darkthemelogo {
+        width: 7.1vw !important;
+        left: -0.95em;
+        top: -1em;
+    }
+
+    div#themeOptionsForBigScreen .fa-sun-o {
+        top: 0.3em;
+        left: -0.03em;
+    }
+
+    div#bgOfTweetIcon {
+        height: 9vh;
+        width: 6.5vw;
+        top: -0.5em !important;
+        left: -0.9em;
+    }
+
+    i#tweetIconForBigScreen {
+        top: 0.3em;
+        left: 0.45em !important;
+    }
+
+    #navBarForBigScreen i {
+        left: -0.7em;
+    }
+
+    #profilePicForBigScreenNav img {
+        width: 6vw;
+        left: -0.8em;
+    }
+
+    i.fa.fa-moon-o {
+        top: 0em;
+        left: 0em !important;
+    }
+
+    div#bgOfTweetIcon {
+        height: 9vh;
+        width: 6.5vw;
+        top: 0.0em !important;
+        left: -0.9em;
+    }
+
+    #profilePicForBigScreenNav img {
+        bottom: -1.6em;
+    }
+
+    #choices {
+        width: 76%;
+        left: 0em;
+        z-index: 1;
+    }
+
+    .tweet {
+        width: 64vw;
+        left: 4em;
+    }
+
+    .pp img {
+        width: 6vw;
+        left: 2.3em;
+    }
+
+    .grid-items {
+        width: 24vw;
+    }
+
+    .oneImage img {
+        width: 47vw;
+    }
+
+    #retweetedImages img {
+        width: 23.8vw;
+    }
+
+    #twoImages img {
+        width: 23vw;
+    }
+
+    img#firstImage {
+        width: 40%;
+    }
+
+    #otherTwo img {
+        width: 26vw;
+    }
+
+    div#searchTab {
+        margin-left: 5em;
+        width: 62vw;
+    }
+
+    input#searchBar {
+        left: 6vw;
+        width: 40vw;
+    }
+
+    div#notiTab {
+        width: 62.5vw;
+        left: 4.2em;
+        margin-right: -0.4em;
+    }
+
+    div#slider {
+        width: 18vw;
+    }
+
+    .typeOfNoti img {
+        width: 6vw;
+    }
+
+    #notiTab h1 {
+        font-size: 2.5em;
+        margin-top: 0.3em;
+    }
+
+    div#notiOptionsTab {
+        margin-top: -1em;
+    }
+
+    div#communitiesTab {
+        width: 62vw;
+        left: 4.8em;
+    }
+
+    #communitiesTab h1 {
+        margin-left: 0.5em;
+        font-size: 2.5em;
+    }
+
+    div#communitiesHeading, div#communities {
+        position: relative;
+        top: -1em;
+    }
+
+    .community .communityInfo .membersPP img {
+        margin-left: -5.69em;
+        left: 14em;
+    }
+
+    div#messagesTab {
+        width: 62vw;
+        left: 4.3em;
+    }
+
+    #searchBarForMsgTab {
+        left: 7vw;
+    }
+
+    div#newTWeetOPtionForBigScreen {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #tweets {
+        top: 1vh;
+    }
+
+    div#sidetrends{
+        display: block;
+        left: 0em;
+    }
+
+    .video {
+        width: 30vw;
+    }
+
+}
+
+@media screen and (min-width : 1025px) {
+    div#sidetrends {
+        width: 26vw;
+        margin-left: 12.5em;
+        height: 160vh;
+        top: -26em;
+    }    
+
+    div#barBg {
+        width: 24vw;
+    }
+
+    #choices {
+        width: 71%;
+    }
+
+    div#homepage {
+        width: 0vw;
+    }
+
+    div#newTWeetOPtionForBigScreen {
+        width: 44vw;
+        margin-left: 5em;
+        position: relative;
+        left: 15.5em;
+    }
+
+    .pp img {
+        width: 4.3vw;
+    }
+
+    .grid-items {
+        width: 18vw;
+    }
+
+    .oneImage img {
+        width: 34vw;
+    }
+
+    #retweetedImages img {
+        width: 16.7vw;
+    }
+
+    #twoImages img {
+        width: 17vw;
+    }
+
+    img#firstImage {
+        width: 50%;
+    }
+
+    #otherTwo img {
+        width: 16.4vw;
+    }
+
+    .tweet {
+        width: 45vw;
+        left: 19.5em;
+    }
+
+    div#navBarForBigScreen {
+        width: 6em;
+    }
+
+    span#following {
+        position: relative;
+        left: 4em;
+    }
+
+    span#forYou {
+        position: relative;
+        left: 8.5em;
+    }
+
+    div#premiumInfo {
+        font-size: 1.1em;
+        width:21vw;
+    }
+
+    div#trendsForbiggerScreens {
+        font-size: 1.2em;
+    }
+
+    div#searchTab {
+        margin-left: 21em;
+        width: 43vw;
+    }
+
+    .video {
+        width: 18vw;
+        height: 43vh;
+    }
+
+    input#searchBar {
+        width: 30vw;
+    }
+
+    div#notiTab {
+        width: 45vw;
+        margin-right: -0.4em;
+        margin-left: 14em;
+    }
+
+    div#slider {
+        width: 12vw;
+    }
+
+    div#messagesTab {
+        width: 35vw;
+        margin-left: 14em;
+    }
+
+    #searchBarForMsgTab {
+        width: 27vw;
+    }
+
+    div#communitiesTab {
+        width: 36vw;
+        margin-left: 16em;
+    }
+
+    .community .communityInfo .membersPP img {
+        width: 3.4vw;
+        height: 4vh;
+        margin-left: -5.6em;
+    }
+
+    span#searchNAddIcons {
+        left: 25em;
+    }
+
+    i.fa.fa-ellipsis-v {
+        left: 6em;
+    }
+
+    #msgReqIcon i {
+        margin-left: 0.35em;
+    }
+
+    .typeOfNoti img {
+        width: 4vw;
+    }
+
+    .retweet .retweetpp img {
+        height: 4vh;
+        width: 3vw;
+    }
+
+    img#whiteThemeLogo {
+        width: 5vw;
+        left: 0.8em;
+    }
+
+    img#darkthemelogo {
+        width: 5.5vw !important;
+        left: 0.6em;
+    }
+
+    #navBarForBigScreen i {
+        left: -2.3em;
+        top: 1em;
+    }
+
+    div#themeOptionsForBigScreen .fa-sun-o {
+        top: 0.5em;
+        left: -1.1em;
+    }
+
+    i.fa.fa-moon-o {
+        top: 0.5em !important;
+        left: -1em !important;
+    }
+
+    i#optsforBigScreen {
+        top: 4em !important;
+        left: -8.5em !important;
+    }
+
+    div#bgOfTweetIcon {
+        display: none;
+    }
+
+    #profilePicForBigScreenNav img {
+        width: 20%;
+        left: 0.7em;
+        bottom: -2.3em;
+        height: 9vh;
+    }
+
+    #navBarForBigScreen span {
+        display: block;
+    }
+
+    span.tabName {
+        margin-bottom: -1em;
+    }
+
+    div#profilePicForBigScreenNav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div#user {
+        display: block;
+    }
+}
+
+@media screen and (min-width : 1441px) {
+    div#pplToFollow {
+        width: 21vw;
+    }
+}

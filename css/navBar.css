@@ -1,0 +1,224 @@
+div#sideNavBar {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000ba;
+    position: fixed;
+    z-index: 6;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-380px);
+    top: 0em;
+    
+}
+
+div#navBar {
+    width: 85%;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div#emptyPart{
+    width: 15%;
+}
+
+div#fixed {
+    height: 27%;
+    margin: 0em 2em;
+    border-bottom: solid 0.1px #80808091;
+    padding-bottom: 1em;
+}
+
+
+#ppNOpts img {
+    width: 11.5vw;
+    height: 5.8vh;
+    border-radius: 50%;
+    margin-top: 2.5em;
+}
+
+.optForNavBar {
+    font-size: 1em !important;
+    color: #192734;
+    margin-top: 5.7em;
+    display: inline-block;
+    width: 5vw;
+    height: 2.5vh;
+    z-index: 6 !important;
+    border: solid;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.1em;
+}
+
+div#nameNuserName {
+    margin-top: -0.7em;
+}
+
+span#name {
+    font-weight: 600;
+    display: block;
+    font-size: 1.08em;
+    margin-top: 1em;
+    color: #192734;
+}
+
+span#uName {
+    color: gray;
+}
+
+#navBar p span {
+    color: gray;
+    margin: 0 0.5em 0;
+}
+
+div#moreOptions {
+    display: block;
+    margin: 0.5em 2em 1.5em;
+    border-bottom: solid 0.1em #80808091;
+    padding: 0em 0;
+}
+
+#moreOptions div {
+    margin-top: -0.8em;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8em;
+}
+
+#moreOptions div h1 {
+    font-size: 1.5em;
+    margin: 0.9em 0 0;
+    color: #192734;
+}
+
+#moreOptions div i, #moreOptions div img{
+    width: 20%;
+}
+
+#moreOptions div i {
+    margin-top: 1.2em;
+    font-size: 1.3em;
+    text-align: center;
+    margin-right: 1em;
+    color: #192734;
+}
+
+#moreOptions div img{
+    width: 9vw;
+    height: 4vh;
+    position: relative;
+    right: -0.5em;
+    margin-right: 2.3em;
+    top: 1.5em;
+}
+
+#whiteXlogoForNav {
+    top: 2em !important;
+}
+
+#blackXlogoForNav {
+    display: none;
+    left: 0.5em;
+    top: 2em !important;
+}
+
+#setNSupHeading p {
+    font-weight: 600;
+    display: inline;
+    margin-right: 4em;
+    font-size: 1.1em;
+}
+
+#setNSupHeading i {
+    font-size: 1.3em;
+}
+
+#setNSupHeading .fa-angle-up {
+    color: rgb(0,172,237);
+    display: none;
+}
+
+#setNSupHeading .fa-angle-down{
+    display: inline;
+}
+
+div#scrollable {
+    position: relative;
+    z-index: 2;
+    height: 58%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+div#setOptions {
+    display: none;
+    transform: translateY(-80px);
+    position: relative;
+    z-index: -1;
+}
+
+#setOptions p i {
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+.fa-question-circle {
+    margin-right: 1.2em !important;
+}
+
+div#themeOptions {
+    background-color: #ffffff70;
+    position: fixed;
+    z-index: 2;
+    width: 85%;
+    bottom: 0em;
+    height: 10%;
+}
+
+div#themeOptions i {
+    font-size: 1.5em;
+    margin: 0.5em 0 1em 1.3em;
+}
+
+i#moonForsmallerScreens{
+    position: relative;
+    opacity: 0;
+    color: #fafafa;
+}
+
+i#moonForBigScreens {
+    opacity: 0;
+}
+
+i#sunForBigScreens {
+    display: block;
+}
+
+div#setNSupHeading {
+    position: relative;
+    left: 2em;
+}
+
+p#set1, p#set2 {
+    margin-left: 2em;
+    color: #192734;
+}
+
+div#setNSup {
+    margin-right: 2em;
+    color: #192734;
+}
+
+i#sunForSmallerScreens {
+    color: #192734;
+}
+
+img#XlogoForNav {
+    display: none;
+}
+
+#navBarForBigScreen{
+    display: none ;
+}

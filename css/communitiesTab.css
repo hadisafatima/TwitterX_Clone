@@ -1,0 +1,96 @@
+div#communitiesTab {
+    display: none;
+}
+
+#communitiesTab h1 {
+    margin-top: 0.6em;
+    margin-left: 2.5em;
+    position: relative;
+    z-index: 3;
+    font-size: 1.85em;
+}
+
+span#searchNAddIcons {
+    width: 20vw;
+    display: inline-block;
+    height: 7vh;
+    text-align: center;
+    position: relative;
+    top: -3em;
+    z-index: 3;
+    left: 18em;
+}
+
+#searchIconForComm, #userIconForComm {
+    font-size: 1.5em ;
+    color: black ;
+    margin-left: 0.2em;
+}
+
+#communitiesHeading h1 {
+    margin-top: -1.8em;
+    margin-left: 0.5em;
+    font-size: 1.4em;
+}
+
+.community {
+    display: flex;
+    flex-direction: row;
+    height: 18vh;
+    margin-top: -0.5em;
+}
+
+.community img {
+    width: 30%;
+    height: 15vh;
+    border-radius: 20%;
+    margin-left: 0.3em;
+}
+
+.communityInfo {
+    margin-top: -0.8em;
+    margin-left: 0.5em;
+}
+
+p.infoHeading {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+p.members {
+    margin-top: -1em;
+}
+
+.community .communityInfo .membersPP img {
+    width: 5vw;
+    height: 4.5vh;
+    border-radius: 50%;
+    margin-left: -2.69em;
+    border: solid 0.1em white;
+    position: relative;
+    left: 7em;
+    margin-top: -0.7em;
+}
+
+.showmoreForComm {
+    color: rgb(0,172,237);
+    margin-left: 0.8em;
+    margin-top: -0.5em;
+}
+
+div#communities {
+    border-bottom: solid 0.05em gray;
+}
+
+.communitiesEnd {
+    border-bottom: none !important;
+}
+
+i.fa.fa-ellipsis-v {
+    display: inline-block;
+    position: relative;
+    top: -2.3em;
+    float: right;
+    right: 1em;
+    color: gray;
+}

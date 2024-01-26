@@ -1,0 +1,155 @@
+div#notiTab {
+    display: none;
+}
+
+div#notiOptionsTab {
+    margin-top: 9em;
+    display: flex;
+    flex-direction: row;
+}
+
+#notiOptionsTab span {
+    text-align: center;
+}
+
+#notiTab h1 {
+    margin-top: -1em;
+    position: relative;
+    z-index: 3;
+    font-size: 1.7em;
+    margin-top: 0.7em;
+    margin-left: 2.7em;
+}
+
+div#notiOptionsTab {
+    margin-top: 2em;
+    display: none;
+    flex-direction: row;
+    border-bottom: solid 0.1em #3c3c3c0f;
+    padding-bottom: 0.3em;
+}
+
+span.notiFlexItems {
+    flex: 1;
+}
+
+div#slider {
+    width: 25vw;
+    height: 0.5vh;
+    background-color: rgb(0,172,237);
+    margin-top: -0.5em;
+    margin-left: 1em;
+    transform: translateX(0px);
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 0.1em #3c3c3c1a;
+}
+
+p.typeOfNoti {
+    width: 18%;
+}
+
+p.NotiContent {
+    width: 81%;
+}
+
+.iconForNoti {
+    font-size: 1.3em !important;
+    margin-left: 1.1em;
+}
+
+i.fa.fa-bell.bellForNoti, i.fa.fa-user-plus{
+    color: rgb(0,172,237);
+}
+
+i.fa.fa-heart.heartForNoti, .colouredHeart {
+    color: #df2f8a;
+}
+
+i.fa.fa-retweet.retweetForNoti{
+    color: #44eb44;
+}
+
+img.notiPP {
+    width: 2em;
+    height: 4.5vh;
+    margin-top: -0.5em;
+    border-radius: 50%;
+}
+
+span.notiItself {
+    position: relative;
+    top: 0.3em;
+}
+
+.notiItself span {
+    font-weight: 600;
+}
+
+span#allNotis {
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
+
+span.reply {
+    display: block;
+    margin-top: 0.5em;
+    color: grey;
+}
+
+.typeOfNoti img {
+    width: 13vw;
+    height: 6.5vh;
+    border-radius: 50%;
+    margin-left: 0.5em;
+}
+
+span.space {
+    margin-top: 0.5em;
+    position: relative;
+    left: -1em;
+    margin-bottom: -0.3em;
+}
+
+#followers span, #likers span {
+    display: inline-block;
+}
+
+#followers span img , #likers span img{
+    width: 2em;
+    height: 4.5vh;
+    border-radius: 50%;
+}
+
+#allTweets {
+    margin-left: 0em;
+}
+
+span.dot {
+    display: inline-block;
+    height: 0.3vh;
+    width: 0.7vw;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 2em;
+    margin-left: 11.5em;
+}
+
+div#allTab {
+    display: block;
+}
+
+div#verified , div#mentions{
+    display: none;
+}
+
+.newNotification {
+    background-color: #ddebf6;
+}
+
+span#verifiedNotis, span#mentionNotis, span#reply{
+    color: gray;
+}

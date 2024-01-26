@@ -1,0 +1,191 @@
+#tweets {
+    position: relative;
+    top: 6vh;
+}
+
+div#forYouTweets {
+    display: block;
+}
+
+div#followingTweets{
+    display: none;
+}
+
+.tweet {
+    display: inline-flex;
+    width: 100vw;
+    border-bottom: solid 0.1em #3c3c3c14;
+    position: relative;
+    z-index: 0;
+}
+
+.tweet .pp{
+    width: 20%;
+}
+
+.tweet .content {
+    width: 78%;
+    position: relative;
+    left: -0.3em;
+}
+
+p.tweeterinfo {
+    margin-top: 0.4em;
+}
+
+span.displayname {
+    font-weight: bolder;
+    color: #192734;
+}
+
+span.username {
+    font-size: 0.9em;
+    color: #3c3c3c;
+}
+
+span.time {
+    margin-left: 0.5em;
+    color: #3c3c3c;
+}
+
+p.retweetcomment {
+    margin-top: -0.5em;
+    color: #192734;
+}
+
+p.retweet {
+    margin-top: -0.5em;
+    border: solid 0.1em #3c3c3c4f;
+    color: #192734;
+}
+
+p.retweet {
+    margin-top: -0.5em;
+    border: solid 0.1em #3c3c3c12;
+    border-radius: 0.5em;
+    text-align: left;
+    padding: 0.3em 0 0.3em 0.4em;
+}
+
+.pp img {
+    height: 7vh;
+    width: 14vw;
+    position: relative;
+    left: 0.5em;
+    top: 0.5em;
+    border-radius: 50%;
+}
+
+.retweetpp{
+    height: 4vh;
+    width: 2vw;
+}
+
+.retweet .retweetpp img {
+    height: 2.5vh;
+    width: 7vw;
+    border-radius: 50%;
+}
+
+.reactions {
+    display: flex;
+    margin: -0.5em 0 0.5em;
+}
+
+.reactions .react {
+    flex: 1;
+    text-align: -webkit-center;
+    color: #3c3c3cad;
+}
+
+p#reply {
+    margin-top: -0.7em;
+    color:#3c3c3cd5;
+}
+
+#reply #replyingto, .hashtag{
+    color: rgb(0,172,237);
+}
+
+p#repliedtweet, .ownedtweet, .images, p#threeImages {
+    margin-top: -0.8em;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-items {
+    height: 17vh;
+    width: 38vw;
+    margin: 0 0.1em 0.1em;
+}
+
+.pic1, #image1 {
+    border-top-left-radius: 13px;
+}
+
+.pic2, #image2 {
+    border-top-right-radius: 13px;
+}
+
+.pic3, #image1 {
+    border-bottom-left-radius: 13px;
+}
+
+.pic4, #image2 {
+    border-bottom-right-radius: 13px;
+}
+
+.oneImage img {
+    height: 40vh;
+    width: 42vh;
+    border-radius: 4%;
+    margin-top: 0.3em;
+}
+
+#retweetedImages img {
+    display: inline-block;
+    height: 14vh;
+    width: 36.5vw;
+}
+
+#twoImages img {
+    height: 20vh;
+    width: 38vw;
+}
+
+p#threeImages {
+    display: flex;
+}
+
+img#firstImage {
+    display: inline-block;
+    width: 47%;
+}
+
+img#otherTwo{
+    display: inline-block;
+    width: 47%;
+}
+
+#otherTwo img {
+    width: 41vw;
+    height: 12vh;
+}
+
+span#otherTwo {
+    margin-left: 0.2em;
+}
+
+img#bottom {
+    margin-bottom: -0.2em;
+}
+
+.fa-check-circle:before {
+    content: "\f069";
+    margin-left: 0.5em;
+    color: rgb(89 194 234);
+}

@@ -1,0 +1,88 @@
+#newTweet {
+    display: none;
+    background-color: #fffafa;
+    position: fixed;
+    z-index: 4;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.95;
+    margin-left: 0.02em;
+    bottom: 0em;
+}
+
+div#newTweetOptions {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -63vh;
+    width: 100vw;
+}
+
+span.tweetOptions {
+    margin-bottom: 0.7em;
+}
+
+#tweetOptionsIcon1, #tweetOptionsIcon2, #tweetOptionsIcon3 {
+    background-color: #FFFAFA;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: -1px 1px #0000004d;
+}
+
+span#tweetOptionsIcon1 {
+    margin-left: 16em;
+}
+
+span#tweetOptionsIcon2 {
+    margin-left: 16.7em;
+}
+
+span#tweetOptionsIcon3 {
+    margin-left: 16.6em;
+}
+
+span#live {
+    position: relative;
+    left: 14.5em;
+}
+
+span#space, span#photo {
+    position: relative;
+    left: 15.2em;
+}
+
+span #tweetOptionsIcon4 {
+    content: "\f2dd";
+    background-color: rgb(0,172,237);
+    display: inline-block;
+    width: 16vw;
+    height: 8.5vh;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 16.8em;
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease;
+}
+
+span#post {
+    position: relative;
+    left: 16em;
+    top: 1em;
+}
+
+#tweetOptionsIcon4 .fa-superpowers {
+    font-size: 1.2em;
+    position: relative;
+    top: 0.98em;
+    left: 0em;
+    color: white;
+}
+
+#tweetOptionsIcon1 i, #tweetOptionsIcon2 i, #tweetOptionsIcon3 i {
+    margin-top: 0.48em;
+    margin-left: 0.07em;
+    color: rgb(0,172,237);
+}

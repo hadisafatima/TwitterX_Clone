@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    top: 0vh;
+    z-index: 3;
+    width: 100vw;
+    background-color: white;
+}
+
+div#homepage {
+    position: relative;
+    top: 8.8vh;
+}
+
+.flex-items{
+    flex: 1; /*will distribute the available space among all 3 divs equally*/
+    margin-top: 2vh;
+}
+
+#profilePic img{
+    width: 13vw;
+    height: 7vh;
+    margin-left: 5vw;
+    border-radius: 50%;
+}
+
+img#whiteThemeLogo, img#blackThemeLogo {
+    height: 6vh;
+    width: 13vw;
+    margin-left: 2.5em;
+}
+
+#header #setting-icon .settingicon {
+    position: relative;
+    left: 19vw;
+    font-size: x-large;
+    top: 1.5vh;
+    color: #192734;
+}
+
+img#blackThemeLogo {
+    position: relative;
+    opacity: 1;
+    display: none;
+}
+
+div#newTWeetOPtionForBigScreen {
+    display: none;
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 7.8vw;
+    border-bottom: solid 0.1em #8080804d;
+    width: 62vw;
+}
+
+img#ppArea {
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50%;
+    margin: 1em 0 0 1em;
+}
+
+#newTweetcontentArea h1 {
+    color: gray;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-top: 1.3em;
+}
+
+div#newTweetOPtionsArea i {
+    color: rgb(34 180 236);
+    margin-left: 1.3em;
+    margin-top: 2em;
+}
+
+div#newTweetOPtionsArea {
+    margin-left: 0.6em;
+}
+
+div#postBtn {
+    background-color: rgb(34 180 236);
+    width: 3em;
+    padding: 0.3em;
+    position: relative;
+    float: right;
+    left: 18em;
+    top: -1.6em;
+    border-radius: 39%;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+div#sidetrends {
+    display: none;
+    position: sticky;
+    width: 30vw;
+    border-left: solid 0.1em #80808057;
+    z-index: 2;
+    height: 150vh;
+    top: -21em;
+}
+
+#searchBarforsideTrends p {
+    display: inline;
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+
+div#searchBarforsideTrends {
+    background-color: lightgray;
+    border-radius: 10%;
+    padding: 0.5em;
+    margin: -0.5em 0 -0.5em;
+}
+
+div#barBg {
+    background-color: white;
+    padding: 1em;
+    margin-top: -0.3em;
+    position: fixed;
+    z-index: 3;
+    width: 27vw;
+}
+
+div#premiumInfo {
+    margin: 4em 1em 1em;
+    background-color: lightgrey;
+    padding: 1em;
+    border-radius: 10%;
+    position: relative;
+    z-index: 2;
+    width: 24vw;
+}
+
+#premiumInfo h1 {
+    color: #192734;
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+
+div#premiumbtn {
+    background-color: rgb(34 180 236);
+    width: fit-content;
+    padding: 0.5em 2em;
+    border-radius: 15%;
+}
+
+div#trendsForbiggerScreens {
+    background-color: lightgrey;
+    border-radius: 4%;
+    padding: 0.5em;
+    margin: 1em;
+    position: relative;
+    z-index: 2;
+}
+
+#trendsForbiggerScreens h1 {
+    margin: 0.5em;
+    font-size: 1.5em;
+    color: #192734;
+}
+
+#trendsForbiggerScreens div#trends {
+    margin: -1em 0.7em 1em;
+    font-size: 0.7em;
+}
+
+div#pplToFollow {
+    color: #192734;
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: 10%;
+    margin: 1em;
+}
+
+#pplToFollow h1 {
+    margin-top: 0em;
+    font-size: 1.8em;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+}
+
+.follow img {
+    width: 4vw;
+    border-radius: 50%;
+    height: 7vh;
+}
+
+p.display {
+    font-weight: 700;
+}
+
+p.user {
+    color: darkslategrey;
+    margin-top: -0.7em;
+}
+
+.userNDisplayNames {
+    margin-left: 0.3em;
+    margin-top: -0.9em;
+}
+
+.followBtn {
+    background-color: white;
+    height: 3.3vh;
+    width: 6vw;
+    text-align: center;
+    padding-top: 0.3em;
+    border-radius: 43%;
+    margin: 0.7em 0 0 1em;
+}
+
+#navBarForBigScreen span{
+    display: none;
+    font-size: 0.6em;
+    color: #192734;
+    position: relative;
+    top: -0.6em;
+    left: 3.4em;
+    font-weight: 600;
+}
+
+span#mT {
+    top: 3.4em;
+}
+
+span#tT {
+    font-size: 0.8em !important;
+    position: relative;
+    top: -1.7em;
+    left: 4.4em;
+    width: 5vw;
+}
+
+div#user {
+    display: none;
+    font-size: 0.6em;
+    color: #192734;
+    position: relative;
+    top: 0.2em;
+}
+
+#user p {
+    position: relative;
+    top: 2.8em;
+    left: 1.8em;
+}
+
+#user span {
+    position: relative;
+    top: 3em;
+    left: 3em;
+    color: darkslategray;
+}
